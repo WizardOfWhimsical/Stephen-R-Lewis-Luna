@@ -1,2 +1,3 @@
 # Stephen-R-Lewis-Luna
+hi, My name is Stephen Raymond Lewis and this is my....
 portfolio project for Intro to Programming course with Code the Dream
