@@ -1,0 +1,25 @@
+@import url("./styles.css");
+
+.essay-format{
+    text-indent: 2em;
+    margin-bottom: 1.5em;
+    margin-left: 10px;
+    padding-left: 1.75em;
+}
+
+#opening-statement{
+    color:var(--primaryColor);
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    font: italic small-caps bold 2em cursive;
+    margin: 2em 0px 2em 0px;
+    padding-left: 1em;
+    overflow: hidden;
+}
+
+h1{
+    margin:0px 0px 0px 1em;
+    color:var(--primaryColor);
+}
+

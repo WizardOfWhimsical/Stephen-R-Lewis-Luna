@@ -1,0 +1,20 @@
+:root{
+    --primaryColor:rgb(207, 87, 243);
+    --primaryLight:rgb(97, 191, 228);
+    --textColor: rgb(238, 231, 179);
+    --textShadow: 2px 3px 3px rgba(185, 241, 95, 0.945);
+    --backgroundGradient: linear-gradient(
+        to bottom right,
+            rgb(26, 63, 150),
+            rgba(70, 120, 206, 0.9),
+            rgba(168, 196, 253, 0.75)
+        
+    );
+    --overlay: linear-gradient(
+        to bottom,
+            rgb(110, 204, 248),
+            rgba(23, 118, 156, 0.65),
+            rgba(12, 140, 172, 0.85)
+        
+    );
+}
