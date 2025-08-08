@@ -19,7 +19,10 @@
 }
 
 h1{
-    margin:0px 0px 0px 1em;
+    margin:0px 0px 0px 0.5em;
     color:var(--primaryColor);
 }
 
+#about{
+    padding:1.5em;
+}

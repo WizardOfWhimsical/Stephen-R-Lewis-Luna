@@ -38,3 +38,6 @@ this is for when i forget where i am at and so i can see me little wins!
     [] Prepare for accessibility and inclusive design in nav and link structure
     [] Push changes to GitHub (still pending final commit/push)
     [] Visual debugging still pending
+
+## Notes:
+    i dont like how the opening quote is positioned.
