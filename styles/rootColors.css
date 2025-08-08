@@ -2,7 +2,7 @@
     --primaryColor:rgb(207, 87, 243);
     --primaryLight:rgb(97, 191, 228);
     --textColor: rgb(238, 231, 179);
-    --textShadow: 2px 3px 3px rgba(185, 241, 95, 0.945);
+    --textShadow: 2px 3px 2px rgb(207, 87, 243, 0.945);
     --backgroundGradient: linear-gradient(
         to bottom right,
             rgb(26, 63, 150),

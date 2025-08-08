@@ -41,3 +41,5 @@ this is for when i forget where i am at and so i can see me little wins!
 
 ## Notes:
     i dont like how the opening quote is positioned.
+    loved primary color for text shadow but it breaks into page,
+     the works are the same color, adjust later lol
