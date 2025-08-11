@@ -17,7 +17,21 @@ body{
     text-shadow:var(--textShadow)
 }
 
+/*******
+ NAVBAR
+*******/
+/* can set media queries for phone/tablet screens */
 
+
+/* overall container */
+.navBar{
+    background:var(--overlay);
+    height: 3em;
+    padding:0.33em;
+    display:flex;
+    justify-content:end;
+    align-items:center;
+}
 
 
 
