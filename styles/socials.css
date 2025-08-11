@@ -1,6 +1,6 @@
 @import url("./styles.css");
 
-a:hover {
+.icons:hover {
     font-size: 70px;
     color: var(--textColor);
 }
