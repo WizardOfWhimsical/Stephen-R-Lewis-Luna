@@ -27,10 +27,16 @@ body{
 .navBar{
     background:var(--overlay);
     height: 3em;
-    padding:0.33em;
+    padding:0.5em;
     display:flex;
     justify-content:end;
     align-items:center;
+}
+
+.navBar-item{
+    text-decoration:none;
+    font: bold 1.5em Comic;
+    margin-left: 2em;
 }
 
 
