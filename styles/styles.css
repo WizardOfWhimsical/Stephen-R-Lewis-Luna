@@ -1,0 +1,47 @@
+@import url("./rootColors.css");
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    /* border: 1px solid red; */
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background:var(--backgroundGradient);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:var(--textColor);
+    text-shadow:var(--textShadow)
+}
+
+/*******
+ NAVBAR
+*******/
+/* can set media queries for phone/tablet screens */
+
+
+/* overall container */
+.navBar{
+    background:var(--overlay);
+    height: 3em;
+    padding:0.5em;
+    display:flex;
+    justify-content:end;
+    align-items:center;
+}
+
+.navBar-item{
+    text-decoration:none;
+    font: bold 1.5em Comic;
+    margin-left: 2em;
+}
+
+.active{
+    color: rgba(245, 40, 40, 0.637);
+}
+
+
+

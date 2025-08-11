@@ -6,3 +6,42 @@ portfolio project for Intro to Programming course with Code the Dream.
 To be honest, I do have high hopes for myself. I plan of doing stuff i have no business doing,
 with tech i have no business playing with. I do hope to maybe blow some minds or it could all 
 just be smoke and mirrors i have conviced myself exist.
+
+
+## Notes:
+    i dont like how the opening quote is positioned.
+    loved primary color for text shadow but it breaks into page,
+     the works are the same color, adjust later lol also dont
+     like the purple behind the social icons. the grean is better.
+
+# CheckList
+this is for when i forget where i am at and so i can see me little wins!
+
+    [x] Create css/ folder
+    [x] Create index.css inside css/
+    [x] Link CSS file in head of index.html
+    [x] Apply background color to page body
+    [x] Change default text color
+    [x] Customize font family
+    [x] Add spacing (padding/margin) between sections
+    [x] Align content of one section
+    [x] Style headings (size, weight, color)
+    [x] Style name at top of page
+    [x] Style experience list items into blocks
+    [x] Style connect links
+    
+    [x] Split index.html into multiple HTML pages
+    [x] Ensure new HTML pages have correct links to their own CSS
+    [x] Create html/ folder for non-index pages
+    [x] Begin rough buildout of experience.html and socials.html
+    [x] Create a modular system of CSS files (base, navbar, variables)
+    [x] Design a navbar for multi-page navigation
+    [x] Commit to using raw CSS only (no Bootstrap)
+    [] Choose and apply a modern color palette
+    [x] Plan for animations (fade-in, slide, etc.)
+    [] Include hobbies/interests section on about/index page
+    [x] Design with white space, clarity, and readability in mind
+    [x] Prepare for accessibility and inclusive design in nav and link structure
+    [] Push changes to GitHub (still pending final commit/push)
+    [x] Visual debugging still pending
+
