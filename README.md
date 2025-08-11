@@ -34,14 +34,14 @@ this is for when i forget where i am at and so i can see me little wins!
     [x] Ensure new HTML pages have correct links to their own CSS
     [x] Create html/ folder for non-index pages
     [x] Begin rough buildout of experience.html and socials.html
-    [] Create a modular system of CSS files (base, navbar, variables)
-    [] Design a navbar for multi-page navigation
-    [] Commit to using raw CSS only (no Bootstrap)
+    [x] Create a modular system of CSS files (base, navbar, variables)
+    [x] Design a navbar for multi-page navigation
+    [x] Commit to using raw CSS only (no Bootstrap)
     [] Choose and apply a modern color palette
     [] Plan for animations (fade-in, slide, etc.)
     [] Include hobbies/interests section on about/index page
-    [] Design with white space, clarity, and readability in mind
-    [] Prepare for accessibility and inclusive design in nav and link structure
+    [x] Design with white space, clarity, and readability in mind
+    [x] Prepare for accessibility and inclusive design in nav and link structure
     [] Push changes to GitHub (still pending final commit/push)
-    [] Visual debugging still pending
+    [x] Visual debugging still pending
 
