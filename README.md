@@ -38,7 +38,7 @@ this is for when i forget where i am at and so i can see me little wins!
     [x] Design a navbar for multi-page navigation
     [x] Commit to using raw CSS only (no Bootstrap)
     [] Choose and apply a modern color palette
-    [] Plan for animations (fade-in, slide, etc.)
+    [x] Plan for animations (fade-in, slide, etc.)
     [] Include hobbies/interests section on about/index page
     [x] Design with white space, clarity, and readability in mind
     [x] Prepare for accessibility and inclusive design in nav and link structure
