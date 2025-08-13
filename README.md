@@ -57,10 +57,14 @@ this is for when i forget where i am at and so i can see me little wins!
         [x] "Projects"
         [x] "Connect"
     STRETCH GOAL (Optional) 
-        [] Make the header sticky/fixed on the page using code in your index.css file.
+        [x] Make the header sticky/fixed on the page using code in your index.css file.
         [] change the layout of your "Experience" section using rows and columns
-            []use Flexbox - job titles to the left, dates worked that job to the right and brief description of the job below the title.
+            []use Flexbox - (Think Cards)
+                [] job titles to the left, 
+                [] dates worked that job to the right
+                [] and brief description of the job below the title.
     [x] update the "Connect" section to use Flexbox to improve the layout of your social media icons or links
     [] Media Query's, mainly images
         [] check everything --even tho i have flexed and em'ed them shits
     [] set up .gitignore
+    [] set socials in a footer so they are all on everypage and gets rid of html

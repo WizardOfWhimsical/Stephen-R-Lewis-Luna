@@ -1,1 +1,21 @@
 @import url("./styles.css");
+
+.flexControlContainer{
+    width: 100vw;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.cardBody{
+    border: 1px solid red;
+    width:50%;
+    min-width:31.25em;
+    max-width:40em;
+    height:30%;
+    min-height: 18.75em;
+    max-height: 25.5em;
+}
+
