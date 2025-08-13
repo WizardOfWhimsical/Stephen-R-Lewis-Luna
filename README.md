@@ -48,13 +48,13 @@ this is for when i forget where i am at and so i can see me little wins!
     [] In your index.html file, 
        [] add a navigational header to your webpage using the <nav> element.
     [] Add two sections to your index.html file:
-        [] The first section will be "Skills". <h2> with ul->empty 
-        [] The second section will be "Projects". <h2> with ul->empty via API call
+        [x] The first section will be "Skills". <h2> with ul->empty 
+        [x] The second section will be "Projects". <h2> with ul->empty via API call
     [] The navigation menu should include a link to each of your sections
         [x] "About" 
-        [] "Experience"
+        [x] "Experience"
         [x] "Skills"
-        [] "Projects"
+        [x] "Projects"
         [x] "Connect"
     STRETCH GOAL (Optional) 
         [] Make the header sticky/fixed on the page using code in your index.css file.
