@@ -45,12 +45,12 @@ this is for when i forget where i am at and so i can see me little wins!
     [x] Push changes to GitHub (still pending final commit/push)
     [x] Visual debugging still pending
 
-    [] In your index.html file, 
-       [] add a navigational header to your webpage using the <nav> element.
-    [] Add two sections to your index.html file:
+    [x] In your index.html file, 
+       [x] add a navigational header to your webpage using the <nav> element.
+    [x] Add two sections to your index.html file:
         [x] The first section will be "Skills". <h2> with ul->empty 
         [x] The second section will be "Projects". <h2> with ul->empty via API call
-    [] The navigation menu should include a link to each of your sections
+    [x] The navigation menu should include a link to each of your sections
         [x] "About" 
         [x] "Experience"
         [x] "Skills"
@@ -61,4 +61,5 @@ this is for when i forget where i am at and so i can see me little wins!
         [] change the layout of your "Experience" section using rows and columns
             []use Flexbox - job titles to the left, dates worked that job to the right and brief description of the job below the title.
     [x] update the "Connect" section to use Flexbox to improve the layout of your social media icons or links
-    [] Media Query images in
+    [] Media Query's, mainly images
+        [] check everything --even tho i have flexed and em'ed them shits
