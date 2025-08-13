@@ -1,3 +1,9 @@
+header{
+    position:sticky;
+    top: 0;
+    z-index:10;
+}
+
 .navBar{
     background:var(--overlay);
     height: 3em;
