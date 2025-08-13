@@ -4,6 +4,9 @@
 ul{
     list-style:none;
 }
+h2{
+    text-align:center;
+}
 .flexControlContainer{
     width: 100vw;
     height:100vh;
@@ -14,17 +17,20 @@ ul{
 }
 
 .cardBody{
-    border: 1px solid red;
+    background:var(--cardBg);
+    /* border: 1px solid red; */
     width:70vw;
-   margin:0.33em;
+    margin:0.33em;
     padding:0.15em;
     height:50vh;
+    border-radius:0.33em;
+    box-shadow:inset var(--overlayBoxShadow);
 }
 
 .describe{
     font-family:monospace;
     font-size:14px;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     margin: 1px;
     padding:0.25em;
 }
@@ -47,7 +53,7 @@ ul{
 }
 
 .description p{
-    max-height:9.5em;
+    max-height:9em;
     overflow: auto;
 }
 .description h3{
