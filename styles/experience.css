@@ -4,23 +4,22 @@
 ul{
     list-style:none;
 }
+
 h2{
     text-align:center;
 }
 .flexControlContainer{
     width: 100vw;
-    height:100vh;
     display:flex;
     flex-direction:column;
-    justify-content:center;
     align-items:center;
+    padding-top: 10vh;
 }
 
 .cardBody{
     background:var(--cardBg);
-    /* border: 1px solid red; */
     width:70vw;
-    margin:0.33em;
+    margin:1em;
     padding:0.15em;
     height:50vh;
     border-radius:0.33em;
@@ -30,7 +29,6 @@ h2{
 .describe{
     font-family:monospace;
     font-size:14px;
-    /* border: 1px solid blue; */
     margin: 1px;
     padding:0.25em;
 }
