@@ -51,9 +51,11 @@ h2{
 }
 
 .description p{
-    max-height:9em;
-    overflow: auto;
+    max-height:8em;
+    overflow: scroll;
 }
 .description h3{
 margin:0.5em;
 }
+
+/* media queries for cards. content breaks out the bottom */
