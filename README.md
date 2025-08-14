@@ -42,6 +42,6 @@ this is for when i forget where i am at and so i can see me little wins!
     [] Include hobbies/interests section on about/index page
     [x] Design with white space, clarity, and readability in mind
     [x] Prepare for accessibility and inclusive design in nav and link structure
-    [] Push changes to GitHub (still pending final commit/push)
+    [x] Push changes to GitHub (still pending final commit/push)
     [x] Visual debugging still pending
 
