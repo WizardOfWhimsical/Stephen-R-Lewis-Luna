@@ -40,6 +40,16 @@ h2{
     padding:1em;
 }
 
+img{
+    width:25em;
+    border-radius: 1em;
+    margin-bottom:0.8em;
+}
+
+
+/*****************
+    Animations
+******************/
 .banner{
     width: 750px;
     margin:0 auto;
@@ -50,9 +60,7 @@ h2{
     animation: slideFadeIn 1.5s ease-out forwards, slideFadeOut 1s ease-in backwards;
     
 }
-/*****************
-    Animations
-******************/
+
 @keyframes slideFadeIn {
     from{
         opacity: 0;
