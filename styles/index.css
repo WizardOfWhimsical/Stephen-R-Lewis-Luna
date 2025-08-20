@@ -81,3 +81,9 @@ img{
         transform:translateY(300px);
     }
 }
+
+@media (max-width: 768px){
+    .hiddenForSmallerScreens{
+        display:none;
+    }
+}

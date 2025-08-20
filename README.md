@@ -69,4 +69,4 @@ this is for when i forget where i am at and so i can see me little wins!
         [] media queries for cards. content breaks out the bottom
         [] check everything --even tho i have flexed and em'ed them shits
     [] set up .gitignore
-    [] set socials in a footer so they are all on everypage and gets rid of html
+    [x] set socials in a footer so they are all on everypage and gets rid of html
