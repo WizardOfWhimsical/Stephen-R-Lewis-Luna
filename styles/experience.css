@@ -1,16 +1,61 @@
 @import url("./styles.css");
 
-h2{
-     margin:0px 0px 0.5px 1em;
-    color:var(--primaryLight);
-}
-
-h3{
-     margin:0px 0px 0.5px 4em;
-    color:var(--primaryLight);
-}
 
 ul{
-  margin:0px 0px 0.5px 5.5em;
-  padding:0.75em;
+    list-style:none;
 }
+
+h2{
+    text-align:center;
+}
+.flexControlContainer{
+    width: 100vw;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-top: 10vh;
+}
+
+.cardBody{
+    background:var(--cardBg);
+    width:70vw;
+    margin:1em;
+    padding:0.15em;
+    height:50vh;
+    border-radius:0.33em;
+    box-shadow:inset var(--overlayBoxShadow);
+}
+
+.describe{
+    font-family:monospace;
+    font-size:14px;
+    margin: 1px;
+    padding:0.25em;
+}
+
+.controllingHeader{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.title{
+    font-size: 1.5em;
+    margin-top: 0.33em;
+    padding: 0.33em;
+}
+.description{
+    text-align:center;
+    margin-top:0.7em;
+    padding: 0.33em;
+}
+
+.description p{
+    max-height:8em;
+    overflow: scroll;
+}
+.description h3{
+margin:0.5em;
+}
+
+/* media queries for cards. content breaks out the bottom */

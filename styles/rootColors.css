@@ -3,6 +3,8 @@
     --primaryLight:rgb(97, 191, 228);
     --textColor: rgb(238, 231, 179);
     --textShadow: 2px 3px 2px rgb(207, 87, 243, 0.945);
+    /* not using iconhighlightborder */
+    --iconHighlightBorder: 0.05em solid rgb(207, 87, 243, 0.945);
     --backgroundGradient: linear-gradient(
         to bottom right,
             rgb(26, 63, 150),
@@ -17,8 +19,23 @@
             rgba(12, 140, 172, 0.85)
         
     );
-    /* --navBarBoxShadow:
-  inset 3px 3px 2px rgb(207, 87, 243);
-  inset 3px 3px rgb(207, 87, 243, 0.945); */
-
+    --overlayBoxShadow: 5px 6px 5px rgba(203, 220, 255, 0.55);
+    /* --inlayBoxShadow: inset 5px 6px 5px rgba(99, 11, 126, 0.76); */
+    --cardBg: radial-gradient(
+        circle at center,
+          rgb(61, 104, 206) 0,
+          rgba(112, 143, 209, 0.9),
+           rgba(168, 196, 253, 0.75)100%);
 }
+
+/* 
+rgb(61, 104, 206) 100%)
+the card bg is going to be more metal (hopefully) 
+im also going to change the gradient style, but go with
+that style just differnt start points for the other 
+parts, as well i will make the over lays more transparent
+radial-gradient(circle at center, rgba(168, 196, 253, 0.75) 0, rgba(112, 143, 209, 0.9), rgb(61, 104, 206) 100%)
+,
+            ,
+            ,
+*/

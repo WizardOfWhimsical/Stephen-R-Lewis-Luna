@@ -37,11 +37,36 @@ this is for when i forget where i am at and so i can see me little wins!
     [x] Create a modular system of CSS files (base, navbar, variables)
     [x] Design a navbar for multi-page navigation
     [x] Commit to using raw CSS only (no Bootstrap)
-    [] Choose and apply a modern color palette
+    [I FAIL to comply!] Choose and apply a modern color palette
     [x] Plan for animations (fade-in, slide, etc.)
-    [] Include hobbies/interests section on about/index page
+    [x] Include hobbies/interests section on about/index page
     [x] Design with white space, clarity, and readability in mind
     [x] Prepare for accessibility and inclusive design in nav and link structure
     [x] Push changes to GitHub (still pending final commit/push)
     [x] Visual debugging still pending
 
+    [x] In your index.html file, 
+       [x] add a navigational header to your webpage using the <nav> element.
+    [x] Add two sections to your index.html file:
+        [x] The first section will be "Skills". <h2> with ul->empty 
+        [x] The second section will be "Projects". <h2> with ul->empty via API call
+    [x] The navigation menu should include a link to each of your sections
+        [x] "About" 
+        [x] "Experience"
+        [x] "Skills"
+        [x] "Projects"
+        [x] "Connect"
+    STRETCH GOAL (Optional) 
+        [x] Make the header sticky/fixed on the page using code in your index.css file.
+        [x] change the layout of your "Experience" section using rows and columns
+            [x]use Flexbox - (Think Cards)
+                [x] job titles to the left, 
+                [x] dates worked that job to the right
+                [x] and brief description of the job below the title.
+    [x] update the "Connect" section to use Flexbox to improve the layout of your social media icons or links
+    
+    [] Media Query's, mainly images
+        [] media queries for cards. content breaks out the bottom
+        [] check everything --even tho i have flexed and em'ed them shits
+    [] set up .gitignore
+    [x] set socials in a footer so they are all on everypage and gets rid of html
