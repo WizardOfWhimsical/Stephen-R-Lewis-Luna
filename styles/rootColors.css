@@ -3,6 +3,8 @@
     --primaryLight:rgb(97, 191, 228);
     --textColor: rgb(238, 231, 179);
     --textShadow: 2px 3px 2px rgb(207, 87, 243, 0.945);
+    /* not using iconhighlightborder */
+    --iconHighlightBorder: 0.05em solid rgb(207, 87, 243, 0.945);
     --backgroundGradient: linear-gradient(
         to bottom right,
             rgb(26, 63, 150),
