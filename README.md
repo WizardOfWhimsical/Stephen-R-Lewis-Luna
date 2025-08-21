@@ -64,10 +64,7 @@ this is for when i forget where i am at and so i can see me little wins!
                 [x] dates worked that job to the right
                 [x] and brief description of the job below the title.
     [x] update the "Connect" section to use Flexbox to improve the layout of your social media icons or links
-    
-    [] Media Query's, mainly images
-        [] media queries for cards. content breaks out the bottom
-        [] check everything --even tho i have flexed and em'ed them shits
+
     [] set up .gitignore
     [x] set socials in a footer so they are all on everypage and gets rid of html
 
