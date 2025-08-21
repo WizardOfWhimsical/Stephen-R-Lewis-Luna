@@ -7,13 +7,6 @@ To be honest, I do have high hopes for myself. I plan of doing stuff i have no b
 with tech i have no business playing with. I do hope to maybe blow some minds or it could all 
 just be smoke and mirrors i have conviced myself exist.
 
-
-## Notes:
-    i dont like how the opening quote is positioned.
-    loved primary color for text shadow but it breaks into page,
-     the works are the same color, adjust later lol also dont
-     like the purple behind the social icons. the grean is better.
-
 # CheckList
 this is for when i forget where i am at and so i can see me little wins!
 
