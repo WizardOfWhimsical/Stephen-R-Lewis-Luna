@@ -70,3 +70,23 @@ this is for when i forget where i am at and so i can see me little wins!
         [] check everything --even tho i have flexed and em'ed them shits
     [] set up .gitignore
     [x] set socials in a footer so they are all on everypage and gets rid of html
+
+Decide your design strategy:
+    [] Will you design mobile-first?
+    [x] Will you design desktop-first?
+[] Add comment notation to keep your styles organized:
+[] Add a comment section for Mobile Styles
+[] Add a comment section for Tablet Styles
+[] Add a comment section for Desktop Styles
+If you're designing desktop-first, add:
+    [] A media query for tablet-sized screens
+    [] A media query for mobile-sized screens
+[] For each media query, make changes to at least 3 different HTML elements:
+[] Each element must have two style changes
+[] You should have a minimum of 6 changes per media query
+Suggested types of changes include:
+    [] Font size
+    [] Color
+    [] Font style
+    [] Padding or margin
+    [] Background color
