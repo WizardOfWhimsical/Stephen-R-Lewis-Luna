@@ -56,3 +56,18 @@ footer h2{
     justify-content:space-between;
     align-items: center;
 }
+
+
+/* 
+smaller tablets and down
+*/
+@media (max-width: 768px){
+.navBar-item{
+    text-decoration:none;
+    font: bold 1.2em Comic;
+    margin-left: 0.75em;
+}
+.navBar{
+    background:var(--mobileOverlay);
+}
+}
