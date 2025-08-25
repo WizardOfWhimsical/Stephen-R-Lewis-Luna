@@ -61,7 +61,7 @@ footer h2{
 /* 
 smaller tablets and down
 */
-@media (max-width: 768px){
+@media (max-width: 376px){
 .navBar-item{
     text-decoration:none;
     font: bold 1.2em Comic;

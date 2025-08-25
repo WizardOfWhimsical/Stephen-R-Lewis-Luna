@@ -88,7 +88,7 @@ img{
 /* 
 smaller tablets and down
 */
-@media (max-width: 768px){
+@media (max-width: 376px){
     .hiddenForSmallerScreens{
         display:none;
     }

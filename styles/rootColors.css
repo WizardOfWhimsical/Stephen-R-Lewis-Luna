@@ -10,7 +10,6 @@
             rgb(26, 63, 150),
             rgba(70, 120, 206, 0.9),
             rgba(168, 196, 253, 0.75)
-        
     );
     --overlay: linear-gradient(
         to bottom,
@@ -30,7 +29,11 @@
             rgb(110, 204, 248),
             rgba(23, 118, 156),
             rgba(12, 140, 172)
-        
+    );
+    --mobileBackgroundGradient: linear-gradient(
+        to bottom right,
+            rgb(26, 63, 150),
+            rgba(70, 120, 206)
     );
 }
 

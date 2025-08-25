@@ -18,8 +18,16 @@ body{
     text-shadow:var(--textShadow)
 }
 
-/* [] can set media queries for phone/tablet screens */
-
+/*
+mobile view
+*/
+@media (max-width: 376px){
+body{
+    background:var(--mobileBackgroundGradient);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+}
 
 
 
