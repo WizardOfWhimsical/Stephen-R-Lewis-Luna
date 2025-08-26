@@ -65,24 +65,24 @@ Decide your design strategy:
     [] Will you design mobile-first?
     [x] Will you design desktop-first?
 
-[] Add comment notation to keep your styles organized:
-[] Add a comment section for Mobile Styles
+[x] Add comment notation to keep your styles organized:
+[x] Add a comment section for Mobile Styles
     [x] index/css - pushed
-    [] skills/css
-    [x] exp/css
-    [] projects/css
+    [-] skills/css - nothing really there
+    [x] exp/css - pushed
+    [-] projects/css - nothing there
 
 
 [x] Add a comment section for Desktop Styles
 If you're designing desktop-first, add:
     [] A media query for tablet-sized screens
-    [] A media query for mobile-sized screens
+    [x] A media query for mobile-sized screens
 [] For each media query, make changes to at least 3 different HTML elements:
-[] Each element must have two style changes
-[] You should have a minimum of 6 changes per media query
+[x] Each element must have two style changes
+[x] You should have a minimum of 6 changes per media query
 Suggested types of changes include:
-    [] Font size
-    [] Color
+    [x] Font size
+    [x] Color
     [] Font style
-    [] Padding or margin
-    [] Background color
+    [x] Padding or margin
+    [x] Background color
