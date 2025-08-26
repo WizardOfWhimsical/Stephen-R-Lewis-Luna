@@ -1,6 +1,8 @@
 @import url("./styles.css");
 
-
+/* 
+DeskTop
+*/
 ul{
     list-style:none;
 }
@@ -17,6 +19,7 @@ h2{
 }
 
 .cardBody{
+    /* position:relative; */
     background:var(--cardBg);
     width:70vw;
     margin:1em;
@@ -51,6 +54,7 @@ h2{
 }
 
 .description p{
+    /* position:relative; */
     max-height:8em;
     overflow: scroll;
 }
@@ -59,3 +63,34 @@ margin:0.5em;
 }
 
 /* media queries for cards. content breaks out the bottom */
+@media (max-width: 768px){
+.cardBody{
+    position:relative;
+    /* background:var(--cardBg); */
+    /* max-width: 80vw;
+    min-width:60vw; */
+    width:18em;
+    height:12em;
+    margin:0.5em;
+    padding:0.08em;
+    /* max-height:75vh;
+    min-height:65vh; */
+    /* border-radius:0.33em; */
+    /* box-shadow:inset var(--overlayBoxShadow); */
+}
+
+.description p{
+    position:relative;
+    max-height:8em;
+    font-size:0.85em;
+    overflow: scroll;
+    /* overflow-wrap: anywhere; */
+}
+
+.title{
+    font-size: 1em;
+    margin-top: 0.15em;
+    padding: 0.15em;
+}
+
+}
