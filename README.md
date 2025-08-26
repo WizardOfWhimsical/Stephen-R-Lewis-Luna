@@ -7,13 +7,6 @@ To be honest, I do have high hopes for myself. I plan of doing stuff i have no b
 with tech i have no business playing with. I do hope to maybe blow some minds or it could all 
 just be smoke and mirrors i have conviced myself exist.
 
-
-## Notes:
-    i dont like how the opening quote is positioned.
-    loved primary color for text shadow but it breaks into page,
-     the works are the same color, adjust later lol also dont
-     like the purple behind the social icons. the grean is better.
-
 # CheckList
 this is for when i forget where i am at and so i can see me little wins!
 
@@ -64,29 +57,32 @@ this is for when i forget where i am at and so i can see me little wins!
                 [x] dates worked that job to the right
                 [x] and brief description of the job below the title.
     [x] update the "Connect" section to use Flexbox to improve the layout of your social media icons or links
-    
-    [] Media Query's, mainly images
-        [] media queries for cards. content breaks out the bottom
-        [] check everything --even tho i have flexed and em'ed them shits
+
     [] set up .gitignore
     [x] set socials in a footer so they are all on everypage and gets rid of html
 
 Decide your design strategy:
     [] Will you design mobile-first?
     [x] Will you design desktop-first?
-[] Add comment notation to keep your styles organized:
-[] Add a comment section for Mobile Styles
-[] Add a comment section for Tablet Styles
-[] Add a comment section for Desktop Styles
+
+[x] Add comment notation to keep your styles organized:
+[x] Add a comment section for Mobile Styles
+    [x] index/css - pushed
+    [-] skills/css - nothing really there
+    [x] exp/css - pushed
+    [-] projects/css - nothing there
+
+
+[x] Add a comment section for Desktop Styles
 If you're designing desktop-first, add:
     [] A media query for tablet-sized screens
-    [] A media query for mobile-sized screens
+    [x] A media query for mobile-sized screens
 [] For each media query, make changes to at least 3 different HTML elements:
-[] Each element must have two style changes
-[] You should have a minimum of 6 changes per media query
+[x] Each element must have two style changes
+[x] You should have a minimum of 6 changes per media query
 Suggested types of changes include:
-    [] Font size
-    [] Color
+    [x] Font size
+    [x] Color
     [] Font style
-    [] Padding or margin
-    [] Background color
+    [x] Padding or margin
+    [x] Background color
