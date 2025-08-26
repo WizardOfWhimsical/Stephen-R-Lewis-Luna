@@ -69,7 +69,7 @@ Decide your design strategy:
 [] Add a comment section for Mobile Styles
     [x] index/css - pushed
     [] skills/css
-    [] exp/css
+    [x] exp/css
     [] projects/css
 
 
