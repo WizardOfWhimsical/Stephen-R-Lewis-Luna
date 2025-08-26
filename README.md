@@ -57,22 +57,18 @@ this is for when i forget where i am at and so i can see me little wins!
                 [x] dates worked that job to the right
                 [x] and brief description of the job below the title.
     [x] update the "Connect" section to use Flexbox to improve the layout of your social media icons or links
-
     [] set up .gitignore
     [x] set socials in a footer so they are all on everypage and gets rid of html
 
 Decide your design strategy:
     [] Will you design mobile-first?
     [x] Will you design desktop-first?
-
 [x] Add comment notation to keep your styles organized:
 [x] Add a comment section for Mobile Styles
     [x] index/css - pushed
     [-] skills/css - nothing really there
     [x] exp/css - pushed
     [-] projects/css - nothing there
-
-
 [x] Add a comment section for Desktop Styles
 If you're designing desktop-first, add:
     [] A media query for tablet-sized screens
@@ -86,3 +82,27 @@ Suggested types of changes include:
     [] Font style
     [x] Padding or margin
     [x] Background color
+
+[] Create a folder called js at the same level as index.html, readme.md, and css folder
+[] Inside the js folder, create a JavaScript file called index.js
+[] Open index.html file
+[] Before the closing </body> tag, insert a <script> element with a src attribute that specifies the relative path to js/index.js
+[] Save and open index.html in your browser (or use live extension in VSCode)
+[] In index.js, use DOM manipulation to add a footer element to index.html
+[] Create a variable today and assign it a new Date object
+[] Create a variable thisYear and assign it the current year using getFullYear
+[] Create a variable footer and assign it the footer element using DOM selection
+[] Create a variable copyright and use it to create a new <p> element
+[] Set the innerHTML of copyright to display your name and the current year (include © for stretch goal)
+[] Append the copyright element to the footer
+[] In index.html, above the "Connect" section, add a new <section> element with id="skills"
+[] Inside the new section, add an <h2> element with text "Skills"
+[] After the <h2> element, add an empty unordered list <ul>
+[] In index.js, create an array skills containing your technical skills
+[] Create a variable skillsSection and select the skills section by id
+[] Create a variable skillsList and select the <ul> inside skillsSection
+[] Create a for loop to iterate over the skills array
+[] Inside the loop, create a variable skill to make a new <li> element
+[] Set the inner text of skill to the current array element
+[] Append the skill element to skillsList
+[] In index.css, use flexbox or grid to organize and style the list of skills (include adjustments in media queries)
