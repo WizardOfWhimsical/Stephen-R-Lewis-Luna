@@ -81,7 +81,7 @@ margin:0.5em;
 
 .description p{
     position:relative;
-    max-height:8em;
+    max-height:6em;
     font-size:0.85em;
     overflow: scroll;
     /* overflow-wrap: anywhere; */
