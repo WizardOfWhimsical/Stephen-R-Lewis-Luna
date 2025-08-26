@@ -19,9 +19,9 @@ body{
 }
 
 /*
-mobile view
+lg mobile view/ sm tablets 
 */
-@media (max-width: 376px){
+@media (max-width: 768px){
 body{
     background:var(--mobileBackgroundGradient);
     background-repeat: no-repeat;

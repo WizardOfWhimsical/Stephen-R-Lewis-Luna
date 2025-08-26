@@ -64,10 +64,16 @@ this is for when i forget where i am at and so i can see me little wins!
 Decide your design strategy:
     [] Will you design mobile-first?
     [x] Will you design desktop-first?
+
 [] Add comment notation to keep your styles organized:
 [] Add a comment section for Mobile Styles
-[] Add a comment section for Tablet Styles
-[] Add a comment section for Desktop Styles
+    [x] index/css - pushed
+    [] skills/css
+    [] exp/css
+    [] projects/css
+
+
+[x] Add a comment section for Desktop Styles
 If you're designing desktop-first, add:
     [] A media query for tablet-sized screens
     [] A media query for mobile-sized screens

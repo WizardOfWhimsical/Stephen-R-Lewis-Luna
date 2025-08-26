@@ -86,9 +86,9 @@ img{
 
 
 /* 
-smaller tablets and down
+lg phones and smaller tablets
 */
-@media (max-width: 376px){
+@media (max-width: 768px){
     .hiddenForSmallerScreens{
         display:none;
     }
