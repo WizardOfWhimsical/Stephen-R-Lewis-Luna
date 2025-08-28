@@ -38,8 +38,6 @@ footer h2{
 }
 .icons:hover {
     font-size: 60px;
-    /* border: var(--iconHighlightBorder);
-    border-radius: 25px; */
     color: var(--textColor);
 }
 .icons{

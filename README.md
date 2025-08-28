@@ -83,10 +83,11 @@ Suggested types of changes include:
     [x] Padding or margin
     [x] Background color
 
-[] Create a folder called js at the same level as index.html, readme.md, and css folder
-[] Inside the js folder, create a JavaScript file called index.js
-[] Open index.html file
-[] Before the closing </body> tag, insert a <script> element with a src attribute that specifies the relative path to js/index.js
+[x] Create a folder called js at the same level as index.html, readme.md, and css folder
+[x] Inside the js folder, create a JavaScript file called index.js
+[x] Open index.html file
+[x] Before the closing </body> tag, insert a <script> element with a src attribute that specifies the relative path to js/index.js
+
 [] Save and open index.html in your browser (or use live extension in VSCode)
 [] In index.js, use DOM manipulation to add a footer element to index.html
 [] Create a variable today and assign it a new Date object
