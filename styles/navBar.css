@@ -24,9 +24,10 @@ header{
 }
 
 /************************
-  Footer Connections Nav
+  Footer/Connections Nav
 *************************/
-footer{
+
+.centering{
     display: flex;
     flex-direction:column;
     justify-content:center;

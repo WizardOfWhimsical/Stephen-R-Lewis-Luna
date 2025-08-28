@@ -88,14 +88,14 @@ Suggested types of changes include:
 [x] Open index.html file
 [x] Before the closing </body> tag, insert a <script> element with a src attribute that specifies the relative path to js/index.js
 
-[] Save and open index.html in your browser (or use live extension in VSCode)
-[] In index.js, use DOM manipulation to add a footer element to index.html
-[] Create a variable today and assign it a new Date object
-[] Create a variable thisYear and assign it the current year using getFullYear
-[] Create a variable footer and assign it the footer element using DOM selection
-[] Create a variable copyright and use it to create a new <p> element
-[] Set the innerHTML of copyright to display your name and the current year (include © for stretch goal)
-[] Append the copyright element to the footer
+[x] Save and open index.html in your browser (or use live extension in VSCode)
+[x] In index.js, use DOM manipulation to add a footer element to index.html
+[x] Create a variable today and assign it a new Date object
+[x] Create a variable thisYear and assign it the current year using getFullYear
+[x] Create a variable footer and assign it the footer element using DOM selection
+[x] Create a variable copyright and use it to create a new <p> element
+[x] Set the innerHTML of copyright to display your name and the current year (include © for stretch goal)
+[x] Append the copyright element to the footer
 [] In index.html, above the "Connect" section, add a new <section> element with id="skills"
 [] Inside the new section, add an <h2> element with text "Skills"
 [] After the <h2> element, add an empty unordered list <ul>

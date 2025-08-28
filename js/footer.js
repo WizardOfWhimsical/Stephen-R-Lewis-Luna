@@ -19,7 +19,9 @@ function copyRightFooter() {
   const thisYear = today.getFullYear();
   copyRightHolder.innerText = `Stephen Lewis \u00A9 ${thisYear}`;
   footer.append(copyRightHolder);
-  body.append(footer)
+  footer.classList.add("centering")
+  const script = document.querySelector("script[src='js/index.js']")
+  body.insertBefore(footer, script)
 }
 
 
