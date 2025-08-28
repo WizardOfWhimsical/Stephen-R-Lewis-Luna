@@ -96,14 +96,14 @@ Suggested types of changes include:
 [x] Create a variable copyright and use it to create a new <p> element
 [x] Set the innerHTML of copyright to display your name and the current year (include © for stretch goal)
 [x] Append the copyright element to the footer
-[] In index.html, above the "Connect" section, add a new <section> element with id="skills"
-[] Inside the new section, add an <h2> element with text "Skills"
-[] After the <h2> element, add an empty unordered list <ul>
-[] In index.js, create an array skills containing your technical skills
-[] Create a variable skillsSection and select the skills section by id
-[] Create a variable skillsList and select the <ul> inside skillsSection
-[] Create a for loop to iterate over the skills array
-[] Inside the loop, create a variable skill to make a new <li> element
-[] Set the inner text of skill to the current array element
-[] Append the skill element to skillsList
-[] In index.css, use flexbox or grid to organize and style the list of skills (include adjustments in media queries)
+[x] In index.html, above the "Connect" section, add a new <section> element with id="skills"
+[x] Inside the new section, add an <h2> element with text "Skills"
+[x] After the <h2> element, add an empty unordered list <ul>
+[x] In index.js, create an array skills containing your technical skills
+[x] Create a variable skillsSection and select the skills section by id
+[x] Create a variable skillsList and select the <ul> inside skillsSection
+[x] Create a for loop to iterate over the skills array
+[x] Inside the loop, create a variable skill to make a new <li> element
+[x] Set the inner text of skill to the current array element
+[x] Append the skill element to skillsList
+[x] In index.css, use flexbox or grid to organize and style the list of skills (include adjustments in media queries)
