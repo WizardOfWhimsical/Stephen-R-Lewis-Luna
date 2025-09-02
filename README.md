@@ -83,6 +83,7 @@ Suggested types of changes include:
     [x] Padding or margin
     [x] Background color
 
+
 [x] Create a folder called js at the same level as index.html, readme.md, and css folder
 [x] Inside the js folder, create a JavaScript file called index.js
 [x] Open index.html file
@@ -107,3 +108,4 @@ Suggested types of changes include:
 [x] Set the inner text of skill to the current array element
 [x] Append the skill element to skillsList
 [x] In index.css, use flexbox or grid to organize and style the list of skills (include adjustments in media queries)
+
