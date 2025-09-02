@@ -86,3 +86,4 @@ Suggested types of changes include:
     [] Font style
     [x] Padding or margin
     [x] Background color
+
