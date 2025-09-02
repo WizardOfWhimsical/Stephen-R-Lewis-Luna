@@ -24,9 +24,10 @@ header{
 }
 
 /************************
-  Footer Connections Nav
+  Footer/Connections Nav
 *************************/
-footer{
+
+.centering{
     display: flex;
     flex-direction:column;
     justify-content:center;
@@ -38,8 +39,6 @@ footer h2{
 }
 .icons:hover {
     font-size: 60px;
-    /* border: var(--iconHighlightBorder);
-    border-radius: 25px; */
     color: var(--textColor);
 }
 .icons{
