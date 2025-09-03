@@ -109,3 +109,72 @@ Suggested types of changes include:
 [x] Append the skill element to skillsList
 [x] In index.css, use flexbox or grid to organize and style the list of skills (include adjustments in media queries)
 
+Assignment: Task List / Deliverables
+    Create a Message Form
+        [] Open your index.html file
+        [] Above the <footer> element, add an empty <section> element
+        [] Inside the new <section> element, create a level-two heading that says "Leave a Message"
+        [] After the heading, create an HTML <form> element with a name attribute that equals "leave_message"
+        [] Inside the <form> element, add the following:
+        [] <input> element with attributes: type "text", name "usersName", and required true
+        [] <input> element with attributes: type "email", name "usersEmail", and required true
+
+        [] <textarea> element with attributes: name "usersMessage" and required true 
+        <button> element that says "Submit" and has type attribute equal to "submit" 
+        Each form field should also have a corresponding <label> element (Optional) Use <br> elements to stack the form fields 
+        Save and refresh your browser (or just check your browser for changes if using live extension) 
+        Add navigation to the message form: Add a link in your <nav> section that takes the user to the 'Leave a Message' section when clicked
+
+Add Message List Section
+    [] After the <section> element from the previous step, create a new <section> element with an id of "messages"
+    [] Inside that element, create a level-two heading that says "Messages"
+    [] After the heading, add an empty unordered list (<ul>) element
+    [] Save and refresh your browser (or just check your browser for changes if using live extension)
+
+Handle Message Form Submit
+    [] Open your index.js file and start at the bottom
+    [] Create a variable named messageForm that uses "DOM Selection" to select the "leave_message" form by name attribute
+    [] Add an event listener to the messageForm element that handles the "submit" event hint: addEventListener method
+    [] Inside the callback function for your event listener, create three new variables (one for each of the three form fields) and retrieve the value from the event hint: event.target is the form, event.target.usersName is the first input element
+    [] Inside the callback function for your event listener, add a console.log statement to log the three variables you created in the previous step
+    [] Save and refresh your browser (or just check your browser for changes if using live extension)
+    [] Open the console in your browser if you haven't already by either right clicking on your page and select "Inspect" or by using the menu bar to open the Developer tools.
+    [] Fill out the HTML form in your browser and hit "Submit"
+    [] Note: at this point, you should notice that the browser is refreshing automatically when you submit your form which is not the desired behavior
+    [] Inside the callback function, above the other code you just wrote, add a new line to prevent the default refreshing behavior of the "submit" event hint: preventDefault method
+    [] Save and refresh your browser (or just check your browser for changes if using live extension)
+    [] Fill out the HTML form in your browser and hit "Submit"
+    [] You should see that the page does not refresh and your values are logged in the console
+    [] Note: at this point, you should notice that the form is submitting properly but the form fields are not reset after submit
+    [] Inside the callback function, on the very last line, add a new line of code to clear the form hint: reset method
+    [] Save and refresh your browser (or just check your browser for changes if using live extension)
+
+Display Messages in List
+In the index.js file, start inside the event listener callback function on the line above where you reset the form
+Create a variable named messageSection and use "DOM Selection" to select the #messages section by id
+Create a variable named messageList and use "DOM Selection" to query the messageSection (instead of the entire document) to find the <ul> element
+Create a variable named newMessage that makes a new list item (li) element
+On the next line, set the inner HTML of your newMessage element with the following information:
+<a> element that displays the "usersName" and is a clickable link to the "usersEmail" (hint: use the mailto: prefix)
+<span> element that displays the "usersMessage"
+Create a variable named removeButton that makes a new <button> element
+Set the inner text to "remove"
+Set the type attribute to "button"
+Add an event listener to the removeButton element that handles the "click" event
+Inside the callback function, create a variable named entry that finds the button's parent element using DOM Traversal (hint: parentNode property)
+Remove the entry element from the DOM (hint: remove method)
+Append the removeButton to the newMessage element
+hint: appendChild method
+Append the newMessage to the messageList element
+Save and refresh your browser (or just check your browser for changes if using live extension)
+
+Style your Message Form
+Open your index.css file
+Style your message form fields and buttons keeping in mind:
+adequate spacing so form fields aren't crowded
+appropriate sizing in media queries so a user on a mobile device can easily touch/tap into the fields to type
+button sizing to accommodate click and touch/tap interactions
+
+Stretch Goals
+(Optional) Hide the #messages section, including the Messages header, when the list is empty
+(Optional) Create an "edit" button for each message entry that allows the user to input a new/modified message
