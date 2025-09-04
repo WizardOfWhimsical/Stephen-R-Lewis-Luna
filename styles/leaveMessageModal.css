@@ -10,39 +10,64 @@
 } */
 
 .leaveMessageModal {
+    /* for page centering */
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    /* modal size */
     width: 18.75em;
     height: 25em;
+    /* disign prefrences */
     background: var(--overlay);
     box-shadow: var(--overlayBoxShadow), inset var(--overlayBoxShadow);
     border-radius: 0.66em;
+    /* positioning */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* additional util */
     padding: 1em;
     backdrop-filter: blur(10px);
 
 }
+
+/*  Button: Uniform Styling (normal and CTA btn)  */
 .personalizedButton{
     width: 10em;
     height: 2.25em;
     border-radius: 1em;
     justify-self: center;
-    padding: 0.66em;
+    padding: 0.66em; 
+}
+
+.button-uniform {
+    width: 7em!important;
+    height: 2em!important;
+    padding: 0.3em!important;
+    margin: 0.3em!important;
+    border-radius: 0.66em;
+    font-family: var(--fontMain, sans-serif);
+    font-size: 1em;
+}
+.basicButton{
+    border: var(--highlightButtonBoarder);
+    background: var(--buttonBg);  
+    color: var(--buttonText);           
+    box-shadow: var(--buttonShadow);    
+    text-shadow: var(--buttonTextShadow);
+}
+.callToActionButton{
     border: 1px solid ivory;
     background: var(--buttonGradient);
     color:var(--personalizedTextShadow);
-    box-shadow:var(--overlayBoxShadow), inset var(--overlayBoxShadow); 
+    box-shadow: inset var(--overlayBoxShadow);
 }
-
 #leaveMessage h2 {
-margin:0!important;
-padding: 0!important;
-color: var(--textColor);
+    margin:0!important;
+    padding: 0!important;
+    color: var(--textColor);
 }
 .spacingBelowInput {
     margin-bottom: 1em;

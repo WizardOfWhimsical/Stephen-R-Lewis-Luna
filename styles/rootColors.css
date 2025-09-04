@@ -2,10 +2,10 @@
     --primaryColor:rgb(207, 87, 243);
     --primaryLight:rgb(97, 191, 228);
     --textColor: rgb(238, 231, 179);
-    --textShadow: 2px 3px 2px rgb(207, 87, 243, 0.945);
+    --textShadow: 2px 3px 2px rgba(207, 87, 243, 0.645);
     --personalizedTextShadow: 2px 2px 1px rgba(248, 245, 36, 0.83);
     /* not using iconhighlightborder */
-    --iconHighlightBorder: 0.05em solid rgb(207, 87, 243, 0.945);
+    --highlightButtonBoarder: 0.165em solid rgb(207, 87, 243, 0.945);
     --backgroundGradient: linear-gradient(
         to bottom right,
             rgb(26, 63, 150),
@@ -41,6 +41,17 @@
             rgb(26, 63, 150),
             rgba(70, 120, 206)
     );
+
+/* button color uniformity */
+ /* --- Button Styling Vars --- */
+  --buttonBg: radial-gradient(circle at center, rgb(162, 109, 178),rgba(207, 87, 243, 0.714), rgba(255, 255, 240, 0.895));
+  --buttonText: rgb(238, 231, 179);
+  --buttonShadow: inset 0 0 8px rgb(97, 191, 228, 0.4); /* glowing soft blue */
+  --buttonTextShadow: 0 0 3px rgba(238, 231, 179, 0.75);
+
+  /* --- Font --- */
+  --fontMain: 'Open Sans', sans-serif;
+
 }
 
 /* 

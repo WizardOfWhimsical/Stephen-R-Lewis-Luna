@@ -28,7 +28,11 @@ closeButton.setAttribute("id","close");
 submitButton.textContent = "Submit";
 closeButton.textContent = "Close";
 closeButton.classList.add("grabbingCursor");
+closeButton.classList.add("button-uniform");
+closeButton.classList.add("callToActionButton");
 submitButton.classList.add("grabbingCursor");
+submitButton.classList.add("button-uniform");
+submitButton.classList.add("basicButton");
 // Setting attributes and text content for the name input field
 labelName.setAttribute("for","name");
 labelName.textContent = "Name: ";
@@ -69,6 +73,7 @@ leaveMessageButton.setAttribute("id","leaveMessageButton");
 leaveMessageButton.textContent = "Leave a Message";
 leaveMessageButton.classList.add("centering");
 leaveMessageButton.classList.add("personalizedButton");
+leaveMessageButton.classList.add("callToActionButton");
 leaveMessageButton.classList.add("grabbingCursor");
 body.insertBefore(leaveMessageButton, footer);
 // Adding event listener to toggle visibility of the leave message section

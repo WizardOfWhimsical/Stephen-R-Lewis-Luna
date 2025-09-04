@@ -185,3 +185,4 @@ Stretch Goals
 (Optional) Hide the #messages section, including the Messages header, when the list is empty
 (Optional) Create an "edit" button for each message entry that allows the user to input a new/modified message
 
+[] spacing on experience page for cards looks a little off, set media query 
