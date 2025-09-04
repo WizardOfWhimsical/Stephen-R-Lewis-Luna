@@ -88,5 +88,21 @@ closeButton.addEventListener("click", () => {
   leaveMessageButton.classList.toggle("visible");
   console.log("Close Button Clicked");
 });
-console.log("*********");
-console.log(section);
+
+submitButton.addEventListener("click", (event) => {
+  event.preventDefault();
+  const formData = document.forms.leaveMessage;
+  const userName = formData.usersName.value;
+  const userEmail = formData.usersEmail.value;
+  const userMessage = formData.usersMessage.value;
+  console.log("Submit Button Clicked");
+  console.log("name", userName);
+  console.log("email", userEmail);
+  console.log("message", userMessage);
+  // need conedition to check what page the user is on so that it
+  //  uses the correct path to navigate to messages.html
+  window.location.href = `./html/messages.html`;
+  // window.location.href = `./html/messages.html?name=${encodeURIComponent(userName)}&email=${encodeURIComponent(userEmail)}&message=${encodeURIComponent(userMessage)}`;
+});
+// console.log("*********");
+// console.log(window.location);
