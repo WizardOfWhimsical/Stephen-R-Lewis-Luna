@@ -25,6 +25,16 @@
     align-items: center;
     padding: 1em;
 }
+.personalizedButton{
+    width: 10em;
+    height: 2.25em;
+    border-radius: 1em;
+    justify-self: center;
+    padding: 0.66em;
+    border: 1px solid ivory;
+    background: var(--buttonGradient);
+    color:var(--personalizedTextShadow); ;
+}
 .grabbingCursor:hover {
    cursor:grab;
 }
@@ -33,4 +43,7 @@
 }
 .hidden {
     display: none;
+}
+.visible{
+    visibility: hidden;
 }

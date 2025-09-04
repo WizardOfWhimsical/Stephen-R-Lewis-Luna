@@ -65,18 +65,19 @@ leaveMessageButton.setAttribute("id","leaveMessageButton");
 // leaveMessageButton.setAttribute("type","button");
 leaveMessageButton.textContent = "Leave a Message";
 leaveMessageButton.classList.add("centering");
+leaveMessageButton.classList.add("personalizedButton");
 leaveMessageButton.classList.add("grabbingCursor");
 body.insertBefore(leaveMessageButton, footer);
 // Adding event listener to toggle visibility of the leave message section
 leaveMessageButton.addEventListener("click", () => {
   section.classList.toggle("hidden");
-  leaveMessageButton.classList.toggle("hidden");
+  leaveMessageButton.classList.toggle("visible");
   console.log("Leave Message Button Clicked");
 });
 
 closeButton.addEventListener("click", () => {
   section.classList.toggle("hidden");
-  leaveMessageButton.classList.toggle("hidden");
+  leaveMessageButton.classList.toggle("visible");
   console.log("Close Button Clicked");
 });
 console.log("*********");
