@@ -1,5 +1,6 @@
 @import url("./rootColors.css");
 @import url("./navBar.css");
+@import url("./leaveMessageModal.css");
 
 *{
     box-sizing: border-box;

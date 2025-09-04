@@ -1,0 +1,36 @@
+/* #leaveMessage {
+    width: 18.75em;
+    height: 25em;
+    background-color: var(--overlay);
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:var(--overlayBoxShadow), inset var(--overlayBoxShadow);
+    border-radius: 0.66em; 
+} */
+
+.leaveMessageModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 18.75em;
+    height: 25em;
+    background: var(--overlay);
+    box-shadow: var(--overlayBoxShadow), inset var(--overlayBoxShadow);
+    border-radius: 0.66em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+.grabbingCursor:hover {
+   cursor:grab;
+}
+.grabbingCursor:active {
+   cursor:grabbing;
+}
+.hidden {
+    display: none;
+}
