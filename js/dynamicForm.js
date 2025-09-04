@@ -95,14 +95,28 @@ submitButton.addEventListener("click", (event) => {
   const userName = formData.usersName.value;
   const userEmail = formData.usersEmail.value;
   const userMessage = formData.usersMessage.value;
+
+  
+consolo();
+  // Clear the form fields after submission
+  inputName.value = "";
+  inputEmail.value = "";
+  textArea.value = "";
+  function consolo(){
   console.log("Submit Button Clicked");
   console.log("name", userName);
   console.log("email", userEmail);
   console.log("message", userMessage);
-  // need conedition to check what page the user is on so that it
-  //  uses the correct path to navigate to messages.html
-  window.location.href = `./html/messages.html`;
-  // window.location.href = `./html/messages.html?name=${encodeURIComponent(userName)}&email=${encodeURIComponent(userEmail)}&message=${encodeURIComponent(userMessage)}`;
+}
+
 });
 // console.log("*********");
 // console.log(window.location);
+
+
+
+
+// need conedition to check what page the user is on so that it
+  // //  uses the correct path to navigate to messages.html
+  // window.location.href = `./html/messages.html`;
+  // // window.location.href = `./html/messages.html?name=${encodeURIComponent(userName)}&email=${encodeURIComponent(userEmail)}&message=${encodeURIComponent(userMessage)}`;
