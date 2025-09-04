@@ -129,13 +129,13 @@ Assignment: Task List / Deliverables
         [x] <button> element that says "Submit" and has type attribute equal to "submit" 
         [x] Each form field should also have a corresponding <label> element (Optional) Use <br> elements to stack the form fields 
         [x] Save and refresh your browser (or just check your browser for changes if using live extension) 
-        [] Add navigation to the message form: Add a link in your <nav> section that takes the user to the 'Leave a Message' section when clicked
+        [x] Add navigation to the message form: Add a link in your <nav> section that takes the user to the 'Leave a Message' section when clicked
 
 Add Message List Section
-    [] After the <section> element from the previous step, create a new <section> element with an id of "messages"
-    [] Inside that element, create a level-two heading that says "Messages"
-    [] After the heading, add an empty unordered list (<ul>) element
-    [] Save and refresh your browser (or just check your browser for changes if using live extension)
+    [x] After the <section> element from the previous step, create a new <section> element with an id of "messages"
+    [x] Inside that element, create a level-two heading that says "Messages"
+    [x] After the heading, add an empty unordered list (<ul>) element
+    [x] Save and refresh your browser (or just check your browser for changes if using live extension)
 
 Handle Message Form Submit
     [] Open your index.js file and start at the bottom
