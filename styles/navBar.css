@@ -1,7 +1,10 @@
 header{
+    width:98vw;
     position:sticky;
     top: 0;
     z-index:10;
+    justify-self: center;
+
 }
 
 .navBar{
@@ -11,8 +14,17 @@ header{
     display:flex;
     justify-content:end;
     align-items:center;
+        border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: inset var(--overlayBoxShadow);
+    backdrop-filter: blur(10px);
 }
-
+.navBar nav{
+    padding:0 1em;
+    display:flex;
+    justify-content:end;
+    align-items:center;
+}
 .navBar-item{
     text-decoration:none;
     font: bold 1.5em Comic;
