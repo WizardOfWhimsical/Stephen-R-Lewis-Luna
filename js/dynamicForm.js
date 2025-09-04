@@ -36,6 +36,7 @@ inputName.setAttribute("type","text");
 inputName.setAttribute("id","name");//for label association
 inputName.setAttribute("required","");
 inputName.setAttribute("name","usersName");
+inputName.classList.add("spacingBelowInput");
 // Setting attributes and text content for the email input field
 labelEmail.setAttribute("for","email");
 labelEmail.textContent = "Email: ";
@@ -43,9 +44,11 @@ inputEmail.setAttribute("type","text");
 inputEmail.setAttribute("id","email");//for label association
 inputEmail.setAttribute("required","");
 inputEmail.setAttribute("name","usersEmail");
+inputEmail.classList.add("spacingBelowInput");
 // Setting attributes for the textarea
 textArea.setAttribute("name","usersMessage");
 textArea.setAttribute("required","");
+textArea.classList.add("spacingBelowInput");
 
 // Appending elements to the form and section
 //so stoked when i found out about chainding append method calls, makes it so much cleaner

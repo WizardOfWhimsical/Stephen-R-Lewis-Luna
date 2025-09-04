@@ -33,8 +33,18 @@
     padding: 0.66em;
     border: 1px solid ivory;
     background: var(--buttonGradient);
-    color:var(--personalizedTextShadow); ;
+    color:var(--personalizedTextShadow);
+    box-shadow:var(--overlayBoxShadow), inset var(--overlayBoxShadow); ;
 }
+
+#leaveMessage h2 {
+margin:0!important;
+padding: 0!important;
+color: var(--textColor);
+}
+.spacingBelowInput {
+    margin-bottom: 1em;
+}   
 .grabbingCursor:hover {
    cursor:grab;
 }
