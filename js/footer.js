@@ -1,12 +1,5 @@
 // footer js
 
-
-
-
-
-
-
-
 // notes:getElementByTagName returns an array that i can use [] on.
 // document.body is actually a thing
 

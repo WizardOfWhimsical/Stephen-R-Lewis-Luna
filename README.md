@@ -111,19 +111,25 @@ Suggested types of changes include:
 
 Assignment: Task List / Deliverables
     Create a Message Form
-        [] Open your index.html file
-        [] Above the <footer> element, add an empty <section> element
-        [] Inside the new <section> element, create a level-two heading that says "Leave a Message"
-        [] After the heading, create an HTML <form> element with a name attribute that equals "leave_message"
-        [] Inside the <form> element, add the following:
-        [] <input> element with attributes: type "text", name "usersName", and required true
-        [] <input> element with attributes: type "email", name "usersEmail", and required true
+        [x] Open your index.html file
+-->     [] Above the <footer> element, add an empty <section> element
+        [x] Inside the new <section> element, create a level-two heading that says "Leave a Message"
+        [x] After the heading, create an HTML <form> element with a name attribute that equals "leave_message"
+        [x] Inside the <form> element, add the following:
+        [x] <input> element with attributes: type "text", name "usersName", and required true
+        [x] <input> element with attributes: type "email", name "usersEmail", and required true
+                  x  section
+                  x      h2
+                  x      form
+                  x          label (name, email)
+                  x          input (name, email)
 
-        [] <textarea> element with attributes: name "usersMessage" and required true 
-        <button> element that says "Submit" and has type attribute equal to "submit" 
-        Each form field should also have a corresponding <label> element (Optional) Use <br> elements to stack the form fields 
-        Save and refresh your browser (or just check your browser for changes if using live extension) 
-        Add navigation to the message form: Add a link in your <nav> section that takes the user to the 'Leave a Message' section when clicked
+
+        [x] <textarea> element with attributes: name "usersMessage" and required true 
+        [x] <button> element that says "Submit" and has type attribute equal to "submit" 
+        [x] Each form field should also have a corresponding <label> element (Optional) Use <br> elements to stack the form fields 
+        [x] Save and refresh your browser (or just check your browser for changes if using live extension) 
+        [] Add navigation to the message form: Add a link in your <nav> section that takes the user to the 'Leave a Message' section when clicked
 
 Add Message List Section
     [] After the <section> element from the previous step, create a new <section> element with an id of "messages"
@@ -178,3 +184,4 @@ button sizing to accommodate click and touch/tap interactions
 Stretch Goals
 (Optional) Hide the #messages section, including the Messages header, when the list is empty
 (Optional) Create an "edit" button for each message entry that allows the user to input a new/modified message
+
