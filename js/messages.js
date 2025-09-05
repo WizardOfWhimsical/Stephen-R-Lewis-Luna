@@ -1,34 +1,56 @@
-//grabbing and clearing message data
-// const messageData = JSON.parse(localStorage.getItem("messageData"));
-// localStorage.removeItem("messageData");
-
-section.classList.toggle("hidden");
-leaveMessageButton.classList.toggle("visible");
-
-
 
 const messagesSection = document.getElementById("messages");
-messagesSection.classList.toggle("visible");
 const messageList = messagesSection.querySelector("ul");
 const newMessage = document.createElement("li");
 
-//remove button <button type="button">Remove</button>
+section.classList.toggle("hidden");
+leaveMessageButton.classList.toggle("visible");
+messagesSection.classList.toggle("visible");
+
+const messageSavedData = [];
+submitButton.addEventListener("click", (event) => {
+  event.preventDefault();
+  const formData = document.forms.leaveMessage;
+  const leaveMessageData = {}
+  leaveMessageData.userName = formData.usersName.value;
+  leaveMessageData.userEmail = formData.usersEmail.value;
+  leaveMessageData.userMessage = formData.usersMessage.value;
+
+  // Save data to localStorage to travel from one page to another
+// localStorage.setItem("messageData", JSON.stringify(leaveMessageData));
+  messageSavedData.push(leaveMessageData);
+  createMessageElement(messageSavedData);
+  // Clear the form fields after submission
+  inputName.value = "";
+  inputEmail.value = "";
+  textArea.value = "";
+navigateToMessagesPage();
+});
+
+closeButton.addEventListener("click", () => {
+  section.classList.toggle("hidden");
+  leaveMessageButton.classList.toggle("visible");
+  messagesSection.classList.toggle("visible");
+  console.log("Close Button Clicked");
+});
+
+//remove button 
 const removeButton = document.createElement("button"); 
 removeButton.setAttribute("type", "button");
 removeButton.textContent = "Remove";
 
-removeButton.addEventListener("click", () => {
-    const entry = this.parentNode; //find the button's parent element
-    
+removeButton.addEventListener("click", function () {
+    const entry = this.parentNode; 
     console.log("Message entry removed from the DOM:", entry);
-
     entry.remove();
 })
-
-//.innerHTML? thought it was a security risk but it seems to be the only way to add HTML content to a list item
-
+// Function to create and append message elements
+function createMessageElement(array) {
+array.forEach((messageData) => {
 newMessage.innerHTML = `<a href="mailto:${messageData.userEmail}">${messageData.userName}</a> <span>${messageData.userMessage}</span>`;
 
 newMessage.appendChild(removeButton);
-messageList.appendChild(newMessage);
-// console.log("Messages Section Element:", messageList);
+messageList.append(newMessage);
+})
+}
+

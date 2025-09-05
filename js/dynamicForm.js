@@ -81,33 +81,8 @@ leaveMessageButton.addEventListener("click", () => {
     navigateToMessagesPage();
 });
 
-closeButton.addEventListener("click", () => {
-  section.classList.toggle("hidden");
-  leaveMessageButton.classList.toggle("visible");
-  messagesSection.classList.toggle("visible");
-  console.log("Close Button Clicked");
 
-});
-const messageData = [];
-submitButton.addEventListener("click", (event) => {
-  event.preventDefault();
-  const formData = document.forms.leaveMessage;
-  const leaveMessageData = {}
-  leaveMessageData.userName = formData.usersName.value;
-  leaveMessageData.userEmail = formData.usersEmail.value;
-  leaveMessageData.userMessage = formData.usersMessage.value;
 
-  // Save data to localStorage to travel from one page to another
-// localStorage.setItem("messageData", JSON.stringify(leaveMessageData));
-  messageData.push(leaveMessageData);
-  // Clear the form fields after submission
-  inputName.value = "";
-  inputEmail.value = "";
-  textArea.value = "";
-
-navigateToMessagesPage();
-
-});
 
 
 function navigateToMessagesPage() {
