@@ -1,13 +1,11 @@
-
+//Globnal Variables
 const messagesSection = document.getElementById("messages");
 const messageList = messagesSection.querySelector("ul");
-const newMessage = document.createElement("li");
 
 section.classList.toggle("hidden");
 leaveMessageButton.classList.toggle("visible");
 messagesSection.classList.toggle("visible");
 
-const messageSavedData = [];
 /****************************************
  * 
  * SUBMIT BUTTON EVENT LISTENER FUNCTION
@@ -16,15 +14,7 @@ const messageSavedData = [];
 submitButton.addEventListener("click", (event) => {
   event.preventDefault();
   const formData = document.forms.leaveMessage;
-  // const leaveMessageData = {}
-  // leaveMessageData.userName = formData.usersName.value;
-  // leaveMessageData.userEmail = formData.usersEmail.value;
-  // leaveMessageData.userMessage = formData.usersMessage.value;
 
-  // Save data to localStorage to travel from one page to another
-// localStorage.setItem("messageData", JSON.stringify(leaveMessageData));
-  // messageSavedData.push(leaveMessageData);
-  // createMessageElement(messageSavedData);
 let listElement = new Message(formData.usersName.value, formData.usersEmail.value, formData.usersMessage.value); 
 listElement.rendered(messageList);
 
@@ -32,36 +22,19 @@ listElement.rendered(messageList);
   inputName.value = "";
   inputEmail.value = "";
   textArea.value = "";
-navigateToMessagesPage();
+navigateToMessagesPage(); 
 });
-
+/*************************
+ * 
+ *        HELPERS
+ * 
+**************************/
 closeButton.addEventListener("click", () => {
   section.classList.toggle("hidden");
   leaveMessageButton.classList.toggle("visible");
   messagesSection.classList.toggle("visible");
   console.log("Close Button Clicked");
 });
-
-// //remove button 
-// const removeButton = document.createElement("button"); 
-// removeButton.setAttribute("type", "button");
-// removeButton.textContent = "Remove";
-
-// removeButton.addEventListener("click", function () {
-//     const entry = this.parentNode; 
-//     console.log("Message entry removed from the DOM:", entry);
-//     entry.remove();
-// })
-// // Function to create and append message elements
-// function createMessageElement(array) {
-// array.forEach((messageData) => {
-// newMessage.innerHTML = `<a href="mailto:${messageData.userEmail}">${messageData.userName}</a> <span>${messageData.userMessage}</span>`;
-
-// newMessage.appendChild(removeButton);
-// messageList.append(newMessage);
-// })
-// }
-
 
 class Message {
   constructor(userName, userEmail, userMessage) {
@@ -70,9 +43,9 @@ class Message {
     this.userMessage = userMessage;
   }
 createElement() {
-    const messageElement = document.createElement("li");
-    messageElement.innerHTML = `<a href="mailto:${this.userEmail}">${this.userName}</a> <span>${this.userMessage}</span>`;
-    return messageElement;
+    const newMessage = document.createElement("li");
+    newMessage.innerHTML = `<a href="mailto:${this.userEmail}">${this.userName}</a> <span>${this.userMessage}</span>`;
+    return newMessage;
   }
   createButton() {
     const removeButton = document.createElement("button");

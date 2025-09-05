@@ -11,104 +11,88 @@ const textArea = document.createElement("textarea");
 const submitButton = document.createElement("button");
 const closeButton = document.createElement("button");
 const breakLine = document.createElement("br");
-//attching it to footer
+
 const body = document.body;
 const footer = document.querySelector("footer");
-//section attributes and appending to the DOM
-section.setAttribute("id","leaveMessage");//for navigation
-// Setting text content for the heading
+
+section.setAttribute("id","leaveMessage");
+
 heading.textContent = "Leave a Message";
-//form attributes
+
 form.setAttribute("name","leaveMessage");
-//button attributes and text content
+
 submitButton.setAttribute("type","submit");
 submitButton.setAttribute("id","submit");
 closeButton.setAttribute("type","button");
 closeButton.setAttribute("id","close");
+
 submitButton.textContent = "Submit";
 closeButton.textContent = "Close";
+
 closeButton.classList.add("grabbingCursor");
 closeButton.classList.add("button-uniform");
 closeButton.classList.add("callToActionButton");
 submitButton.classList.add("grabbingCursor");
 submitButton.classList.add("button-uniform");
 submitButton.classList.add("basicButton");
-// Setting attributes and text content for the name input field
+
 labelName.setAttribute("for","name");
 labelName.textContent = "Name: ";
 inputName.setAttribute("type","text");
-inputName.setAttribute("id","name");//for label association
+inputName.setAttribute("id","name");
 inputName.setAttribute("required","");
 inputName.setAttribute("name","usersName");
 inputName.classList.add("spacingBelowInput");
-// Setting attributes and text content for the email input field
+
 labelEmail.setAttribute("for","email");
 labelEmail.textContent = "Email: ";
 inputEmail.setAttribute("type","text");
-inputEmail.setAttribute("id","email");//for label association
+inputEmail.setAttribute("id","email");
 inputEmail.setAttribute("required","");
 inputEmail.setAttribute("name","usersEmail");
 inputEmail.classList.add("spacingBelowInput");
-// Setting attributes for the textarea
+
 textArea.setAttribute("name","usersMessage");
 textArea.setAttribute("required","");
 textArea.classList.add("spacingBelowInput");
 
-// Appending elements to the form and section
-//so stoked when i found out about chainding append method calls, makes it so much cleaner
 form.append(labelName, inputName, breakLine, labelEmail, inputEmail, textArea, breakLine, submitButton, breakLine, closeButton);
 section.append(heading, breakLine, form);
-//change classes to modal.css later
+
 form.classList.add("centering");
 section.classList.add("leaveMessageModal");
 section.classList.add("hidden");
 
-// Appending the section to the body before the script tag
 body.insertBefore(section, footer);
 
-//making button to toggle modal visibility for leave message form
 const leaveMessageButton = document.createElement("h2");
 leaveMessageButton.setAttribute("id","leaveMessageButton");
-// leaveMessageButton.setAttribute("type","button");
 leaveMessageButton.textContent = "Leave a Message";
 leaveMessageButton.classList.add("centering");
 leaveMessageButton.classList.add("personalizedButton");
 leaveMessageButton.classList.add("callToActionButton");
 leaveMessageButton.classList.add("grabbingCursor");
+
 body.insertBefore(leaveMessageButton, footer);
-// Adding event listener to toggle visibility of the leave message section
+
 leaveMessageButton.addEventListener("click", () => {
     navigateToMessagesPage();
 });
-
-
-
-
 
 function navigateToMessagesPage() {
   const currentPath = window.location.pathname;
   //to grab last item in array
   const fileName = currentPath.split("/").pop();
-switch (fileName) {
-  case "index.html":
-    window.location.href = `./html/messages.html`;
-    break;
-    case "messages.html":
-  section.classList.toggle("hidden");
-  leaveMessageButton.classList.toggle("visible");
-  messagesSection.classList.toggle("visible");
+  switch (fileName) {
+    case "index.html":
+      window.location.href = `./html/messages.html`;
       break;
-    default:
-      window.location.href = "./messages.html";
+      case "messages.html":
+    section.classList.toggle("hidden");
+    leaveMessageButton.classList.toggle("visible");
+    messagesSection.classList.toggle("visible");
+        break;
+      default:
+        window.location.href = "./messages.html";
 }
 }
-// console.log("*********");
-// console.log(fileName);
-
-
-
-
-// need conedition to check what page the user is on so that it
-  // //  uses the correct path to navigate to messages.html
-  // window.location.href = `./html/messages.html`;
-  // // window.location.href = `./html/messages.html?name=${encodeURIComponent(userName)}&email=${encodeURIComponent(userEmail)}&message=${encodeURIComponent(userMessage)}`;

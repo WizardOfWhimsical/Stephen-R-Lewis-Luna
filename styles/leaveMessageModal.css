@@ -1,14 +1,3 @@
-/* #leaveMessage {
-    width: 18.75em;
-    height: 25em;
-    background-color: var(--overlay);
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow:var(--overlayBoxShadow), inset var(--overlayBoxShadow);
-    border-radius: 0.66em; 
-} */
-
 .leaveMessageModal {
     /* for page centering */
     position: fixed;
