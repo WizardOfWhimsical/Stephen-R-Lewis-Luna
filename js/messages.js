@@ -8,6 +8,11 @@ leaveMessageButton.classList.toggle("visible");
 messagesSection.classList.toggle("visible");
 
 const messageSavedData = [];
+/****************************************
+ * 
+ * SUBMIT BUTTON EVENT LISTENER FUNCTION
+ * 
+****************************************/
 submitButton.addEventListener("click", (event) => {
   event.preventDefault();
   const formData = document.forms.leaveMessage;
@@ -54,3 +59,34 @@ messageList.append(newMessage);
 })
 }
 
+
+class Message {
+  constructor(userName, userEmail, userMessage) {
+    this.userName = userName;
+    this.userEmail = userEmail;
+    this.userMessage = userMessage;
+  }
+createElement() {
+    const messageElement = document.createElement("li");
+    messageElement.innerHTML = `<a href="mailto:${this.userEmail}">${this.userName}</a> <span>${this.userMessage}</span>`;
+    return messageElement;
+  }
+  createButton() {
+    const removeButton = document.createElement("button");
+    removeButton.setAttribute("type", "button");
+    removeButton.textContent = "Remove";
+    removeButton.addEventListener("click", function () {
+      const entry = this.parentNode;
+      console.log("Message deletion", {entry});
+      entry.remove();
+    });
+    return removeButton;
+  }
+  rendered(parent) {
+    const messageElement = this.createElement();
+    const removeButton = this.createButton();
+    messageElement.append(removeButton);
+    console.log("Appending message element to parent:",{messageElement});
+    parent.append(messageElement);
+  }
+}
