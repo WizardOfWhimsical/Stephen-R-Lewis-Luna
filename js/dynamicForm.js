@@ -80,9 +80,15 @@ leaveMessageButton.addEventListener("click", () => {
 });
 
 function navigateToMessagesPage() {
-  const currentPath = window.location.pathname;
-  //to grab last item in array
-  const fileName = currentPath.split("/").pop();
+
+const url = new URL(window.location.href);
+const pathname = url.pathname;
+const fileName = pathname.split("/").pop();
+
+  // const currentPath = window.location.pathname;
+  console.log("Current path:", currentPath);
+  // const fileName = currentPath.split("/").pop();
+  console.log("Current file name:", fileName);
   switch (fileName) {
     case "index.html":
       window.location.href = `./html/messages.html`;
