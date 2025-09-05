@@ -157,22 +157,26 @@ Handle Message Form Submit
 
 Display Messages in List
 In the index.js file, start inside the event listener callback function on the line above where you reset the form
-[] Create a variable named messageSection and use "DOM Selection" to select the #messages section by id
-[] Create a variable named messageList and use "DOM Selection" to query the messageSection (instead of the entire document) to find the <ul> element
-[] Create a variable named newMessage that makes a new list item (li) element
-[] On the next line, set the inner HTML of your newMessage element with the following information:
-[] <a> element that displays the "usersName" and is a clickable link to the "usersEmail" (hint: use the mailto: prefix)
-[] <span> element that displays the "usersMessage"
-[] Create a variable named removeButton that makes a new <button> element
-[] Set the inner text to "remove"
-[] Set the type attribute to "button"
-[] Add an event listener to the removeButton element that handles the "click" event
-[] Inside the callback function, create a variable named entry that finds the button's parent element using DOM Traversal (hint: parentNode property)
-[] Remove the entry element from the DOM (hint: remove method)
-[] Append the removeButton to the newMessage element
-[] hint: appendChild method
-[] Append the newMessage to the messageList element
-[] Save and refresh your browser (or just check your browser for changes if using live extension)
+
+[x] Create a variable named messageSection and use "DOM Selection" to select the #messages section by id
+
+[x] Create a variable named messageList and use "DOM Selection" to query the messageSection (instead of the entire document) to find the <ul> element
+
+[x] Create a variable named newMessage that makes a new list item (li) element
+
+On the next line, set the inner HTML of your newMessage element with the following information:
+    [x] <a> element that displays the "usersName" and is a clickable link to the "usersEmail" (hint: use the mailto: prefix)
+    [x] <span> element that displays the "usersMessage"
+    [x] Create a variable named removeButton that makes a new <button> element
+        [x] Set the inner text to "remove"
+        [x] Set the type attribute to "button"
+        [] Add an event listener to the removeButton element that handles the "click" event
+[x] Inside the callback function, create a variable named entry that finds the button's parent element using DOM Traversal (hint: parentNode property)
+[x] Remove the entry element from the DOM (hint: remove method)
+[x] Append the removeButton to the newMessage element
+[x] hint: appendChild method
+[x] Append the newMessage to the messageList element
+[x] Save and refresh your browser (or just check your browser for changes if using live extension)
 
 [] Style your Message Form
 [] Open your index.css file

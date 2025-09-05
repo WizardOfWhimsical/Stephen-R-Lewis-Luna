@@ -78,40 +78,57 @@ leaveMessageButton.classList.add("grabbingCursor");
 body.insertBefore(leaveMessageButton, footer);
 // Adding event listener to toggle visibility of the leave message section
 leaveMessageButton.addEventListener("click", () => {
-  section.classList.toggle("hidden");
-  leaveMessageButton.classList.toggle("visible");
-  console.log("Leave Message Button Clicked");
+    navigateToMessagesPage();
 });
 
 closeButton.addEventListener("click", () => {
   section.classList.toggle("hidden");
   leaveMessageButton.classList.toggle("visible");
+  messagesSection.classList.toggle("visible");
   console.log("Close Button Clicked");
-});
 
+});
+const messageData = [];
 submitButton.addEventListener("click", (event) => {
   event.preventDefault();
   const formData = document.forms.leaveMessage;
-  const userName = formData.usersName.value;
-  const userEmail = formData.usersEmail.value;
-  const userMessage = formData.usersMessage.value;
+  const leaveMessageData = {}
+  leaveMessageData.userName = formData.usersName.value;
+  leaveMessageData.userEmail = formData.usersEmail.value;
+  leaveMessageData.userMessage = formData.usersMessage.value;
 
-  
-consolo();
+  // Save data to localStorage to travel from one page to another
+// localStorage.setItem("messageData", JSON.stringify(leaveMessageData));
+  messageData.push(leaveMessageData);
   // Clear the form fields after submission
   inputName.value = "";
   inputEmail.value = "";
   textArea.value = "";
-  function consolo(){
-  console.log("Submit Button Clicked");
-  console.log("name", userName);
-  console.log("email", userEmail);
-  console.log("message", userMessage);
-}
+
+navigateToMessagesPage();
 
 });
+
+
+function navigateToMessagesPage() {
+  const currentPath = window.location.pathname;
+  //to grab last item in array
+  const fileName = currentPath.split("/").pop();
+switch (fileName) {
+  case "index.html":
+    window.location.href = `./html/messages.html`;
+    break;
+    case "messages.html":
+  section.classList.toggle("hidden");
+  leaveMessageButton.classList.toggle("visible");
+  messagesSection.classList.toggle("visible");
+      break;
+    default:
+      window.location.href = "./messages.html";
+}
+}
 // console.log("*********");
-// console.log(window.location);
+// console.log(fileName);
 
 
 
