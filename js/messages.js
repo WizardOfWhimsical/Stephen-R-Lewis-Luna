@@ -16,15 +16,18 @@ const messageSavedData = [];
 submitButton.addEventListener("click", (event) => {
   event.preventDefault();
   const formData = document.forms.leaveMessage;
-  const leaveMessageData = {}
-  leaveMessageData.userName = formData.usersName.value;
-  leaveMessageData.userEmail = formData.usersEmail.value;
-  leaveMessageData.userMessage = formData.usersMessage.value;
+  // const leaveMessageData = {}
+  // leaveMessageData.userName = formData.usersName.value;
+  // leaveMessageData.userEmail = formData.usersEmail.value;
+  // leaveMessageData.userMessage = formData.usersMessage.value;
 
   // Save data to localStorage to travel from one page to another
 // localStorage.setItem("messageData", JSON.stringify(leaveMessageData));
-  messageSavedData.push(leaveMessageData);
-  createMessageElement(messageSavedData);
+  // messageSavedData.push(leaveMessageData);
+  // createMessageElement(messageSavedData);
+let listElement = new Message(formData.usersName.value, formData.usersEmail.value, formData.usersMessage.value); 
+listElement.rendered(messageList);
+
   // Clear the form fields after submission
   inputName.value = "";
   inputEmail.value = "";
@@ -39,25 +42,25 @@ closeButton.addEventListener("click", () => {
   console.log("Close Button Clicked");
 });
 
-//remove button 
-const removeButton = document.createElement("button"); 
-removeButton.setAttribute("type", "button");
-removeButton.textContent = "Remove";
+// //remove button 
+// const removeButton = document.createElement("button"); 
+// removeButton.setAttribute("type", "button");
+// removeButton.textContent = "Remove";
 
-removeButton.addEventListener("click", function () {
-    const entry = this.parentNode; 
-    console.log("Message entry removed from the DOM:", entry);
-    entry.remove();
-})
-// Function to create and append message elements
-function createMessageElement(array) {
-array.forEach((messageData) => {
-newMessage.innerHTML = `<a href="mailto:${messageData.userEmail}">${messageData.userName}</a> <span>${messageData.userMessage}</span>`;
+// removeButton.addEventListener("click", function () {
+//     const entry = this.parentNode; 
+//     console.log("Message entry removed from the DOM:", entry);
+//     entry.remove();
+// })
+// // Function to create and append message elements
+// function createMessageElement(array) {
+// array.forEach((messageData) => {
+// newMessage.innerHTML = `<a href="mailto:${messageData.userEmail}">${messageData.userName}</a> <span>${messageData.userMessage}</span>`;
 
-newMessage.appendChild(removeButton);
-messageList.append(newMessage);
-})
-}
+// newMessage.appendChild(removeButton);
+// messageList.append(newMessage);
+// })
+// }
 
 
 class Message {
@@ -74,6 +77,9 @@ createElement() {
   createButton() {
     const removeButton = document.createElement("button");
     removeButton.setAttribute("type", "button");
+    removeButton.classList.add("button-uniform")
+    removeButton.classList.add("callToActionButton")
+    removeButton.classList.add("grabbingCursor");
     removeButton.textContent = "Remove";
     removeButton.addEventListener("click", function () {
       const entry = this.parentNode;
