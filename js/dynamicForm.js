@@ -80,27 +80,32 @@ leaveMessageButton.addEventListener("click", () => {
 });
 
 function navigateToMessagesPage() {
-
-const url = new URL(window.location.href);
-const pathname = url.pathname;
-const fileName = pathname.split("/").pop();
-
-  // const currentPath = window.location.pathname;
-  // console.log("Current path:", currentPath);
-  // const fileName = currentPath.split("/").pop();
-
-  console.log("Current path:", pathname);
+  debugger;
+try {
+  console.log("🔥 JS loaded");
+  const currentPath = window.location.pathname;
+  console.log("Current path:", currentPath);
+  const fileName = currentPath.split("/").pop();
   console.log("Current file name:", fileName);
+
   switch (fileName) {
     case "index.html":
-      window.location.href = `./html/messages.html`;
+      window.location.href = "/Stephen-R-Lewis-Luna/html/messages.html";
       break;
-      case "messages.html":
-    section.classList.toggle("hidden");
-    leaveMessageButton.classList.toggle("visible");
-    messagesSection.classList.toggle("visible");
-        break;
-      default:
-        window.location.href = "./messages.html";
+    case "messages.html":
+        section.classList.toggle("hidden");
+        leaveMessageButton.classList.toggle("visible");
+        messagesSection.classList.toggle("visible");
+      break;
+    default:
+      window.location.href = "/Stephen-R-Lewis-Luna/html/messages.html";
+  }
+} catch (error) {
+  console.error("❌ JS Error:", error);
 }
+
 }
+
+
+
+
