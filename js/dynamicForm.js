@@ -86,6 +86,7 @@ try {
   const currentPath = window.location.pathname;
   console.log("Current path:", currentPath);
   const fileName = currentPath.split("/").pop();
+  console.log("Current path spilt", currentPath.split("/"));
   console.log("Current file name:", fileName);
 
   switch (fileName) {
