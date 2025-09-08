@@ -13,11 +13,20 @@ function copyRightFooter() {
   copyRightHolder.innerText = `Stephen Lewis \u00A9 ${thisYear}`;
   footer.append(copyRightHolder);
   footer.classList.add("centering")
-  const script = document.querySelector("script[src='js/index.js']")
+  const script = document.querySelector(chosingPathForFooter());
   body.insertBefore(footer, script)
 }
 
-
+function chosingPathForFooter() {
+  const currentPath = window.location.pathname;
+  const fileName = currentPath.split("/").pop();
+  switch (fileName) {
+    case "index.html":
+      return "script[src='./js/footer.js']";
+    default:
+      return "script[src='../js/footer.js']";
+  }
+}
 
 
 

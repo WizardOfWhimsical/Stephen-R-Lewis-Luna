@@ -5,7 +5,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     /* modal size */
-    width: 18.75em;
+    width: 36em;
     height: 25em;
     /* disign prefrences */
     background: var(--overlay);
@@ -14,7 +14,8 @@
     /* positioning */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     /* additional util */
     padding: 1em;
@@ -72,4 +73,28 @@
 }
 .visible{
     visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+    .leaveMessageModal {
+        width: 18.75em;
+        /* height: 25em; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

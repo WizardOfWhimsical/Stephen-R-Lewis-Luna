@@ -11,6 +11,7 @@ const textArea = document.createElement("textarea");
 const submitButton = document.createElement("button");
 const closeButton = document.createElement("button");
 const breakLine = document.createElement("br");
+const script = document.querySelector("script[src='../js/footer.js']");
 
 const body = document.body;
 const footer = document.querySelector("footer");
@@ -55,6 +56,9 @@ inputEmail.classList.add("spacingBelowInput");
 textArea.setAttribute("name","usersMessage");
 textArea.setAttribute("required","");
 textArea.classList.add("spacingBelowInput");
+
+
+
 
 form.append(labelName, inputName, breakLine, labelEmail, inputEmail, textArea, breakLine, submitButton, breakLine, closeButton);
 section.append(heading, breakLine, form);
