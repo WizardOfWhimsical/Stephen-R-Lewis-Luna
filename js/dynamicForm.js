@@ -10,7 +10,7 @@ const inputEmail = document.createElement("input");
 const textArea = document.createElement("textarea");
 const submitButton = document.createElement("button");
 const closeButton = document.createElement("button");
-const breakLine = document.createElement("br");
+// const breakLine = document.createElement("br"); not using this element, but keeping it for future reference
 const script = document.querySelector("script[src='../js/footer.js']");
 
 const body = document.body;
@@ -54,16 +54,25 @@ inputEmail.setAttribute("name","usersEmail");
 inputEmail.classList.add("spacingBelowInput");
 
 textArea.setAttribute("name","usersMessage");
+textArea.setAttribute("placeholder","Leave a message here...");
 textArea.setAttribute("required","");
 textArea.classList.add("spacingBelowInput");
 
+/*
+nameDiv, emailDiv, and containerDiv
+*/
+const nameDiv = document.createElement("div");
+const emailDiv = document.createElement("div");
+const containerDiv = document.createElement("div");
+const btnContainerDiv = document.createElement("div");
+nameDiv.append(labelName, inputName);
+emailDiv.append(labelEmail, inputEmail);
+containerDiv.append(nameDiv, emailDiv);
+btnContainerDiv.append(submitButton, closeButton);
+form.append(containerDiv, textArea, btnContainerDiv);
+section.append(heading, form);
 
-
-
-form.append(labelName, inputName, breakLine, labelEmail, inputEmail, textArea, breakLine, submitButton, breakLine, closeButton);
-section.append(heading, breakLine, form);
-
-form.classList.add("centering");
+// form.classList.add("centering");
 section.classList.add("leaveMessageModal");
 section.classList.add("hidden");
 
