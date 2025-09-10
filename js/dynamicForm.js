@@ -42,14 +42,14 @@ submitButton.classList.add("grabbingCursor","button-uniform","basicButton");
 setAttributes(submitButton,{"type":"submit","id":"submit"})
 
 labelName.textContent = "Name: ";
-setAttributes(labelName, {
+setAttributes(inputName, {
   "for":"name", "type":"text", "id":"name",
   "name":"usersName", "required":""
 });
 inputName.classList.add("spacingBelowInput");
 
 labelEmail.textContent = "Email: ";
-setAttributes(labelName, {
+setAttributes(inputEmail, {
 "for":"email","type":"text","id":"email","name":"usersEmail","pattern":"^([\\w]+)@([a-z]+)\\.([a-z]{3})$","title":"Please enter a valid email address","required":true
 })
 inputEmail.classList.add("spacingBelowInput");

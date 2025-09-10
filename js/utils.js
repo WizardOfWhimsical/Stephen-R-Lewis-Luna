@@ -62,41 +62,41 @@ function setAttributes(el, attr){
  *    My Locale Dev Model
  *
  * **************************/
-function navigateToMessagesPage() {
-  const currentPath = window.location.pathname;
-  const fileName = currentPath.split("/").pop();
-  switch (fileName) {
-    case "index.html":
-      window.location.href = "./html/messages.html";
-      break;
-    case "messages.html":
-        section.classList.toggle("hidden");
-        leaveMessageButton.classList.toggle("visible");
-        messagesSection.classList.toggle("visible");
-      break;
-    default:
-      window.location.href = "./messages.html";
-  }
-}
-/*************************
- * 
- *  Github Production Model
- *
- * **************************/
 // function navigateToMessagesPage() {
-// try {
 //   const currentPath = window.location.pathname;
 //   const fileName = currentPath.split("/").pop();
 //   switch (fileName) {
+//     case "index.html":
+//       window.location.href = "./html/messages.html";
+//       break;
 //     case "messages.html":
 //         section.classList.toggle("hidden");
 //         leaveMessageButton.classList.toggle("visible");
 //         messagesSection.classList.toggle("visible");
 //       break;
 //     default:
-//       window.location.href = "/Stephen-R-Lewis-Luna/html/messages.html";
+//       window.location.href = "./messages.html";
 //   }
-// } catch (error) {
-//   console.error("❌ JS Error:", error);
 // }
-// }
+/*************************
+ * 
+ *  Github Production Model
+ *
+ * **************************/
+function navigateToMessagesPage() {
+try {
+  const currentPath = window.location.pathname;
+  const fileName = currentPath.split("/").pop();
+  switch (fileName) {
+    case "messages.html":
+        section.classList.toggle("hidden");
+        leaveMessageButton.classList.toggle("visible");
+        messagesSection.classList.toggle("visible");
+      break;
+    default:
+      window.location.href = "/Stephen-R-Lewis-Luna/html/messages.html";
+  }
+} catch (error) {
+  console.error("❌ JS Error:", error);
+}
+}
