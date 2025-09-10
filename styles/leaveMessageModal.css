@@ -22,7 +22,6 @@
     backdrop-filter: blur(10px);
 
 }
-
 #leaveMessage h2 {
     margin:0!important;
     padding: 0!important;
@@ -48,8 +47,6 @@ form div div {
     align-items: baseline;
     width:100%;
 }
-
-
 input {
     width:13em;
     height: 1.75em;
@@ -158,4 +155,10 @@ textarea {
         align-items: center;
         width:100%;
     }
+    .hidden {
+    display: none;
+}
+.visible{
+    visibility: hidden;
+}
 }

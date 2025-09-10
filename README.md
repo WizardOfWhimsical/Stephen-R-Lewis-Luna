@@ -178,16 +178,16 @@ On the next line, set the inner HTML of your newMessage element with the followi
 [x] Append the newMessage to the messageList element
 [x] Save and refresh your browser (or just check your browser for changes if using live extension)
 
-[] Style your Message Form
-[] Open your index.css file
-[] Style your message form fields and buttons keeping in mind:
-[] adequate spacing so form fields aren't crowded
-[] appropriate sizing in media queries so a user on a mobile device can easily touch/tap into the fields to type
-[] button sizing to accommodate click and touch/tap interactions
+[x] Style your Message Form
+[x] Open your index.css file
+[x] Style your message form fields and buttons keeping in mind:
+[x] adequate spacing so form fields aren't crowded
+[x] appropriate sizing in media queries so a user on a mobile device can easily touch/tap into the fields to type
+[x] button sizing to accommodate click and touch/tap interactions
 
 Stretch Goals
 [] (Optional) Hide the #messages section, including the Messages header, when the list is empty
 [] (Optional) Create an "edit" button for each message entry that allows the user to input a new/modified message
 
 [] spacing on experience page for cards looks a little off, set media query 
-[] footer js above things in the html in the inspect is driving me nut, locate and fix!
+[x] footer js above things in the html in the inspect is driving me nut, locate and fix!

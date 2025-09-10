@@ -16,7 +16,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     color:var(--textColor);
-    text-shadow:var(--textShadow)
+    /* text-shadow:var(--textShadow) */
 }
 
 /*

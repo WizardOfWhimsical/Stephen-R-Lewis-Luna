@@ -49,8 +49,11 @@ labelEmail.setAttribute("for","email");
 labelEmail.textContent = "Email: ";
 inputEmail.setAttribute("type","text");
 inputEmail.setAttribute("id","email");
-inputEmail.setAttribute("required","");
 inputEmail.setAttribute("name","usersEmail");
+inputEmail.setAttribute("pattern","^([\\w]+)@([a-z]+)\\.([a-z]{3})$"
+);
+inputEmail.setAttribute("title","Please enter a valid email address");
+inputEmail.setAttribute("required",true);
 inputEmail.classList.add("spacingBelowInput");
 
 textArea.setAttribute("name","usersMessage");
@@ -100,19 +103,16 @@ leaveMessageButton.addEventListener("click", () => {
 
 
 function navigateToMessagesPage() {
-  debugger;
-  console.log("🔥 JS loaded");
+
   const currentPath = window.location.pathname;
-  console.log("Current path:", currentPath);
   const fileName = currentPath.split("/").pop();
-  console.log("Current path spilt", currentPath.split("/"));
-  console.log("Current file name:", fileName);
 
   switch (fileName) {
     case "index.html":
       window.location.href = "./html/messages.html";
       break;
     case "messages.html":
+      // form.reportValidity();
         section.classList.toggle("hidden");
         leaveMessageButton.classList.toggle("visible");
         messagesSection.classList.toggle("visible");
@@ -121,8 +121,6 @@ function navigateToMessagesPage() {
       window.location.href = "./messages.html";
   }
 }
-
-
 
 /*************************
  * 

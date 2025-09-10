@@ -31,12 +31,14 @@
   min-height: 7.5em;
   overflow: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 #messages ul li{
   display: flex;
+  /* flex-direction: column; */
   justify-content: space-between;
   align-items: center;
   width: 100%;
