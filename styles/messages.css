@@ -1,0 +1,58 @@
+@import url("./styles.css");
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+#messages {
+  width: 100vw;
+  padding: 1.25em;
+  margin: 1.25em auto;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#messages ul {
+  list-style-type: none;
+  padding: 0.66em;
+  margin: 1em 0;
+  max-width: 100em;
+  min-width: 10em;
+  width: 75%;
+  max-height: 15em;
+  min-height: 7.5em;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#messages ul li{
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.5em;
+  box-shadow: var(--overlayBoxShadow);
+  font: var(--fontMain);
+  color: var(--textColor);
+  text-shadow: var(--textShadow);
+}
+
+#messages ul li a {
+  color: var(--textColor);
+  text-decoration:wavy underline;
+  font-weight: bold;
+  font-style: small-caps;
+  font-size: 1.5em;
+}

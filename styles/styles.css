@@ -1,5 +1,6 @@
 @import url("./rootColors.css");
 @import url("./navBar.css");
+@import url("./leaveMessageModal.css");
 
 *{
     box-sizing: border-box;
@@ -9,13 +10,13 @@
 }
 
 body{
-    width: 100vw;
+    width: 99vw;
     height: 100vh;
     background:var(--backgroundGradient);
     background-repeat: no-repeat;
     background-attachment: fixed;
     color:var(--textColor);
-    text-shadow:var(--textShadow)
+    /* text-shadow:var(--textShadow) */
 }
 
 /*
