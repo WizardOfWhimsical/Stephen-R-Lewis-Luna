@@ -1,11 +1,26 @@
 :root{
     --primaryColor:rgb(207, 87, 243);
     --primaryLight:rgb(97, 191, 228);
+
     --textColor: rgb(238, 231, 179);
     --textShadow: 2px 3px 2px rgba(207, 87, 243, 0.645);
     --personalizedTextShadow: 2px 2px 1px rgba(248, 245, 36, 0.83);
-    /* not using iconhighlightborder */
+
     --highlightButtonBoarder: 0.165em solid rgb(207, 87, 243, 0.945);
+    --buttonGradient: linear-gradient(
+        to bottom left,
+          rgb(206, 146, 61) 0,
+          rgba(237, 171, 84, 0.855),
+          rgba(244, 218, 169, 0.604)100%);
+    --buttonBg: radial-gradient(
+        circle at center,
+         rgb(162, 109, 178),
+         rgba(207, 87, 243, 0.714),
+         rgba(255, 255, 240, 0.895));
+    --buttonText: rgb(238, 231, 179);
+    --buttonShadow: inset 0 0 8px rgb(97, 191, 228, 0.4); 
+    --buttonTextShadow: 0 0 3px rgba(238, 231, 179, 0.75);
+
     --backgroundGradient: linear-gradient(
         to bottom right,
             rgb(26, 63, 150),
@@ -25,11 +40,6 @@
           rgb(61, 104, 206),
           rgba(112, 143, 209, 0.9),
           rgba(168, 196, 253, 0.75));
-    --buttonGradient: linear-gradient(
-        to bottom left,
-          rgb(206, 146, 61) 0,
-          rgba(237, 171, 84, 0.855),
-          rgba(244, 218, 169, 0.604)100%);
     --mobileOverlay:linear-gradient(
         to bottom,
             rgb(110, 204, 248),
@@ -42,26 +52,7 @@
             rgba(70, 120, 206)
     );
 
-/* button color uniformity */
- /* --- Button Styling Vars --- */
-  --buttonBg: radial-gradient(circle at center, rgb(162, 109, 178),rgba(207, 87, 243, 0.714), rgba(255, 255, 240, 0.895));
-  --buttonText: rgb(238, 231, 179);
-  --buttonShadow: inset 0 0 8px rgb(97, 191, 228, 0.4); /* glowing soft blue */
-  --buttonTextShadow: 0 0 3px rgba(238, 231, 179, 0.75);
-
-  /* --- Font --- */
   --fontMain: 'Open Sans', sans-serif;
 
 }
 
-/* 
-rgb(61, 104, 206) 100%)
-the card bg is going to be more metal (hopefully) 
-im also going to change the gradient style, but go with
-that style just differnt start points for the other 
-parts, as well i will make the over lays more transparent
-radial-gradient(circle at center, rgba(168, 196, 253, 0.75) 0, rgba(112, 143, 209, 0.9), rgb(61, 104, 206) 100%)
-,
-            ,
-            ,
-*/

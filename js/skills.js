@@ -1,11 +1,7 @@
-/*<li>Clear communication</li>
-<li>Tenacity and drive to learn new concepts/technology</li>
-<li>Not afraid to research, ask questions, or look foolish to grow</li>
-<li>Time management under pressure</li>
-<li>Team collaboration during moments of high-demand and moralistic support</li>
-<li>Regular task status updates to management (“stakeholder communication”)</li>
-<li>Project planning & task breakdown (early-stage project management)</li>
-*/
+/*********
+ SKILL.JS
+*********/
+
 
 const skillArray = ["Lifelong Learner",
 "Asks the Right Questions",

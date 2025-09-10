@@ -1,4 +1,7 @@
-// This script dynamically creates a leave message form and appends it to the DOM
+/*************************
+ *DYNAMIC FORM JAVASCRIPT 
+**************************/
+
 const section = document.createElement("section");
 const heading = document.createElement("h2");
 const form = document.createElement("form");

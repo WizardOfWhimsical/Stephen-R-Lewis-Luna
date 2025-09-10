@@ -1,12 +1,7 @@
 @import url("./styles.css");
 
-
-/* 
-desktop formatting
-*/
 .essay-format{
     text-indent: 2em;
-    /*this has to be adjusted for sm. tablets <- */
     margin:1em;
     padding: 1.75em;
     max-width:60vw;
@@ -34,6 +29,7 @@ h1{
 h2{
     margin-bottom:1em !important;
 }
+
 #about{
     padding:1.5em;
     display:flex;
@@ -84,17 +80,12 @@ img{
     }
 }
 
-
-/* 
-lg phones and smaller tablets
-*/
 @media (max-width: 768px){
     .hiddenForSmallerScreens{
         display:none;
     }
     .essay-format{
     text-indent: 2em;
-    /*this has to be adjusted for sm. tablets <- */
     margin:0 0.5em;
     padding: 1em;
     max-width:80vw;
@@ -106,6 +97,5 @@ lg phones and smaller tablets
 h1{
     margin:0px 0px 0.5em 0.5em;
     font-size: 2.2em;
-    /* color:var(--primaryLight); */
 }
 }

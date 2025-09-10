@@ -8,8 +8,8 @@ header{
 }
 a{
 color:  rgb(26, 63, 150);
-
 }
+
 .navBar{
     background:var(--overlay);
     height: 3em;
@@ -62,7 +62,6 @@ footer h2{
 }
 #connect{
     margin: 1em 0px 3em 0px;
-    /* margin-bottom: 2em; */
     padding: 0px 1.5em 0px 1.5em;
     width: 100%;
     height:100px;
@@ -72,9 +71,7 @@ footer h2{
 }
 
 
-/* 
-lg phones and smaller tablets
-*/
+
 @media (max-width: 768px){
 .navBar-item{
     text-decoration:none;
