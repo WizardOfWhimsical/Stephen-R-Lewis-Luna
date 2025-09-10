@@ -38,7 +38,6 @@
 
 #messages ul li{
   display: flex;
-  /* flex-direction: column; */
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -51,7 +50,7 @@
 
 #messages ul li a {
   color: var(--textColor);
-  text-decoration:wavy underline;
+  text-decoration:underline;
   font-weight: bold;
   font-style: small-caps;
   font-size: 1.5em;
