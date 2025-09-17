@@ -177,3 +177,6 @@ this is for when i forget where i am at and so i can see me little wins!
         [] create button that pulls up full message in a modal to read
             [] can make for edit and populational read, 
             [] for edit just reshow modal and populate with the mesage info?
+Reviewer
+    []  A click on your "Leave me a Message" button, should redirect to the your message form
+        going into nav to add link to the page for html
