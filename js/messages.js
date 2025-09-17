@@ -17,8 +17,8 @@ closeButton.addEventListener("click", () => {
 /****************************************
  * SUBMIT BUTTON EVENT LISTENER FUNCTION
 ****************************************/
-const formSave=[];
-submitButton.addEventListener("click", (e) => {
+// const formSave=[];
+submitButton.addEventListener("click", async (e) => {
   e.preventDefault();
 // this right here, Fking Hah! if you would love to talk about this line of code, please reach out to me, I would love to discuss it with you.#nightMare
   if (!form.checkValidity()) {
@@ -26,12 +26,12 @@ submitButton.addEventListener("click", (e) => {
     return;
   }
 
-  const formData = document.forms.leaveMessage;
+ const formData = document.forms.leaveMessage;
   console.log(formData)
   formSave.push({
-    userName: inputName.value,
-    userEmail: inputEmail.value,
-    userMessage: textArea.value
+    userName: inputName.value.trim(),
+    userEmail: inputEmail.value.toLowerCase().trim(),
+    userMessage: textArea.value.trim()
   });
 
 clearList();
@@ -39,3 +39,13 @@ futureFetchSimulation(formSave);
 form.reset();
 navigateToMessagesPage();
 });
+
+
+// const formSave = async () => {
+// let newArray = [];
+// newArray.push({
+//     userName: inputName.value.trim(),
+//     userEmail: inputEmail.value.toLowerCase().trim(),
+//     userMessage: textArea.value.trim()
+//   })
+// }
