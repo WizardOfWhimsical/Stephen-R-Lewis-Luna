@@ -178,5 +178,39 @@ this is for when i forget where i am at and so i can see me little wins!
             [] can make for edit and populational read, 
             [] for edit just reshow modal and populate with the mesage info?
 Reviewer
-    []  A click on your "Leave me a Message" button, should redirect to the your message form
+    [x]  A click on your "Leave me a Message" button, should redirect to the your message form
         going into nav to add link to the page for html
+
+
+    [] Open your index.js file, starting below the code from the previous lesson
+    [] Using the Fetch API, 
+    [] create a "GET" request to https://api.github.com/users/{GITHUB_USERNAME}/repos where {GITHUB_USERNAME} is your username for your GitHub account
+        hint: the fetch function
+        hint: "GET" is the default method for fetch
+    [] Chain a then method to your fetch call
+    [] pass it a function that returns the response JSON data
+    [] Chain another then method and pass it a callback function to parse the response and store it in a variable named repositories
+        hint: JSON.parse(this.response)
+    [] Console.log the value of repositories to better see the data returned from your API fetch
+    [] Save and refresh your browser (or just check your browser for changes if using live extension)
+    [] You should see the list of your GitHub repositories displayed in your console.
+
+    [] Chain a catch() function to your fetch call to handle errors from the server so the user would know what happened if your Projects section was empty.
+        [] try{}catch{} inside the fetch function. then()catch() on chaining promises
+
+    [] Create a variable names projectSection; using "DOM Selection" to select the projects section by id
+    [] Create a variable named projectList; using "DOM Selection" query the projectSection (instead of the entire document) to select the
+element
+    [] Create a for loop to iterate over your repositories Array, starting at index 0
+    [] Inside the loop, create a variable named project to make a new list item (li) element
+        hint: createElement method
+    [] On the next line, set the inner text of your project variable to the current Array element's name property
+        hint: access the Array element using bracket notation
+    [] On the next line, append the project element to the projectList element
+        hint: appendChild method
+    [] Save and refresh your browser (or just check your browser for changes if using live extension)
+You should see your list of repositories beneath the "Projects" heading on your portfolio site
+
+ Add styling to your projects list, be sure to account for any changes you want in media queries
+ STRETCH GOAL: Use flexbox (or grid) to style your list of repositories
+By the end of this assignment, you should have a working API fetch to your GitHub account and be able to see a list of your repository names in the Projects section of your portfolio.  Were there to be a server error during the API fetch, your site would return an error message.  Your project list should be styled using flexbos or grid.
