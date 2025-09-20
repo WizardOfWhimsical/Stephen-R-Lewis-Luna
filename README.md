@@ -176,8 +176,7 @@ this is for when i forget where i am at and so i can see me little wins!
         [] messages stay one line and have "..." for trail off on long messages.
         [] create button that pulls up full message in a modal to read
             [] can make for edit and populational read, 
-            [] for edit just reshow modal and populate with the mesage info?
-Reviewer
+            [] for edit just reshow modal and populate with the mesage info? 
     [x]  A click on your "Leave me a Message" button, should redirect to the your message form
         going into nav to add link to the page for html
     [x] Open your index.js file, starting below the code from the previous lesson
@@ -192,13 +191,11 @@ Reviewer
     [x] Console.log the value of repositories to better see the data returned from your API fetch
     [x] Save and refresh your browser (or just check your browser for changes if using live extension)
     [x] You should see the list of your GitHub repositories displayed in your console.
-
     [x] Chain a catch() function to your fetch call to handle errors from the server so the user would know what happened if your Projects section was empty.
         [x] try{}catch{} inside the fetch function. then()catch() on chaining promises
 
     [] Create a variable names projectSection; using "DOM Selection" to select the projects section by id
-    [] Create a variable named projectList; using "DOM Selection" query the projectSection (instead of the entire document) to select the
-element
+    [] Create a variable named projectList; using "DOM Selection" query the projectSection (instead of the entire document) to select the element
     [] Create a for loop to iterate over your repositories Array, starting at index 0
     [] Inside the loop, create a variable named project to make a new list item (li) element
         hint: createElement method

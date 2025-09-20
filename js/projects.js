@@ -5,9 +5,12 @@
 
 
 fetchGitHubRepoData().then(data=>{
+
+// i like how this shows up in console
   for(let d of data){
     console.log(d)
   }
+
 })
 
 
@@ -50,3 +53,7 @@ async function fetchGitHubRepoData(){
 //     console.error("Catch Error Handler: ", e)
 //   })
 // }
+
+  // for(let i = 0; i < data.length; i++){
+  //   console.log(data[i])
+  // }

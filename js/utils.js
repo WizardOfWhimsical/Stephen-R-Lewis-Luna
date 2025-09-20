@@ -49,6 +49,30 @@ function futureFetchSimulation(arrayOfMessages) {
   })
 }
 
+class RepoItemPuntInDOM{
+  constructor(obj){
+    this.name = obj.name;
+    this.url = `https://wizardofwhimsical.github.io/${obj.name}`;
+    this.desription =  obj.desription
+  }
+  createHeader(){
+    return document.createElement("h2").innertext = this.name;
+  }
+  createSpan(){
+    return document.createElement("span").innerText = this.desription;
+  }
+  createAnchor(){
+    const url = document.createElement("a");
+    url.innerText = `${this.name} Site`;
+    url.setAttribute("href", this.url);
+    return url
+  }
+  appendRepoListItem(parent){
+    const container = document.createElement("div");
+    container.append(this.createHeader(), this.createSpan(), this.createAnchor);
+    return container
+  }
+}
 
 function setAttributes(el, attr){
   for(let key in attr){
@@ -62,41 +86,41 @@ function setAttributes(el, attr){
  *    My Locale Dev Model
  *
  * **************************/
-// function navigateToMessagesPage() {
-//   const currentPath = window.location.pathname;
-//   const fileName = currentPath.split("/").pop();
-//   switch (fileName) {
-//     case "index.html":
-//       window.location.href = "./html/messages.html";
-//       break;
-//     case "messages.html":
-//         section.classList.toggle("hidden");
-//         leaveMessageButton.classList.toggle("visible");
-//         messagesSection.classList.toggle("visible");
-//       break;
-//     default:
-//       window.location.href = "./messages.html";
-//   }
-// }
-/*************************
- * 
- *  Github Production Model
- *
- * **************************/
 function navigateToMessagesPage() {
-try {
   const currentPath = window.location.pathname;
   const fileName = currentPath.split("/").pop();
   switch (fileName) {
+    case "index.html":
+      window.location.href = "./html/messages.html";
+      break;
     case "messages.html":
         section.classList.toggle("hidden");
         leaveMessageButton.classList.toggle("visible");
         messagesSection.classList.toggle("visible");
       break;
     default:
-      window.location.href = "/Stephen-R-Lewis-Luna/html/messages.html";
+      window.location.href = "./messages.html";
   }
-} catch (error) {
-  console.error("❌ JS Error:", error);
 }
-}
+/*************************
+ * 
+ *  Github Production Model
+ *
+ * **************************/
+// function navigateToMessagesPage() {
+// try {
+//   const currentPath = window.location.pathname;
+//   const fileName = currentPath.split("/").pop();
+//   switch (fileName) {
+//     case "messages.html":
+//         section.classList.toggle("hidden");
+//         leaveMessageButton.classList.toggle("visible");
+//         messagesSection.classList.toggle("visible");
+//       break;
+//     default:
+//       window.location.href = "/Stephen-R-Lewis-Luna/html/messages.html";
+//   }
+// } catch (error) {
+//   console.error("❌ JS Error:", error);
+// }
+// }
