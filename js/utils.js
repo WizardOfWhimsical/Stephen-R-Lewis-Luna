@@ -33,6 +33,35 @@ createElement() {
   }
 }
 
+class RepoItemPutInDOM {
+  constructor(obj){
+    this.name = obj.name;
+    this.url = `https://wizardofwhimsical.github.io/${obj.name}`;
+    this.description =  obj.description
+  }
+  createHeader(){
+    const header = document.createElement("h2")
+     header.innerText = this.name;
+     return header
+  };
+  createSpan(){
+    const span = document.createElement("span")
+    span.innerText = this.description;
+    return span
+  };
+  createAnchor(){
+    const anchorTag = document.createElement("a");
+    anchorTag.innerText = `${this.name} Site`;
+    anchorTag.setAttribute("href", this.url);
+    return anchorTag
+  };
+  appendRepoListItem(parent){
+    const container = document.createElement("li");
+    container.append(this.createHeader(), this.createSpan(), this.createAnchor());
+    parent.append(container) 
+  }
+}
+
 function clearList() {
   if (messageList.querySelectorAll("li").length > 0) {
   messageList.querySelectorAll("li").forEach((li) => {
@@ -47,31 +76,6 @@ function futureFetchSimulation(arrayOfMessages) {
     // console.log("rawlist:", listElement);
     listElement.rendered(messageList);
   })
-}
-
-class RepoItemPuntInDOM{
-  constructor(obj){
-    this.name = obj.name;
-    this.url = `https://wizardofwhimsical.github.io/${obj.name}`;
-    this.desription =  obj.desription
-  }
-  createHeader(){
-    return document.createElement("h2").innertext = this.name;
-  }
-  createSpan(){
-    return document.createElement("span").innerText = this.desription;
-  }
-  createAnchor(){
-    const url = document.createElement("a");
-    url.innerText = `${this.name} Site`;
-    url.setAttribute("href", this.url);
-    return url
-  }
-  appendRepoListItem(parent){
-    const container = document.createElement("div");
-    container.append(this.createHeader(), this.createSpan(), this.createAnchor);
-    return container
-  }
 }
 
 function setAttributes(el, attr){

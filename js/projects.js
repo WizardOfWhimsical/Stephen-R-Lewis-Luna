@@ -1,6 +1,7 @@
 
 
-
+const projectSection = document.getElementById("projects");
+const projectsList = projectSection.querySelector("ul")
 
 
 
@@ -9,6 +10,14 @@ fetchGitHubRepoData().then(data=>{
 // i like how this shows up in console
   for(let d of data){
     console.log(d)
+    console.log(d.has_pages)
+    // conditional to only show projects that are hosted 
+    if(d.has_pages){
+      let newItem = new RepoItemPutInDOM(d)
+      newItem.appendRepoListItem(projectsList)
+      
+    }
+    
   }
 
 })
