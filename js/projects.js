@@ -7,7 +7,7 @@ const projectsList = projectSection.querySelector("ul")
 
 fetchGitHubRepoData().then(data=>{
 
-// i like how this shows up in console
+// i like how this shows up in console. the reg loop just showed [object]
   for(let d of data){
     console.log(d)
     console.log(d.has_pages)
@@ -16,31 +16,9 @@ fetchGitHubRepoData().then(data=>{
       let newItem = new RepoItemPutInDOM(d)
       newItem.appendRepoListItem(projectsList)
       
-    }
-    
+    }   
   }
-
 })
-
-
-async function fetchGitHubRepoData(){
-  try{
-    const githubFetch = await fetch("https://api.github.com/users/WizardOfWhimsical/repos")
-    if(githubFetch.status === 404) {
-    throw new Error("GitHub API: Resource not found (404)");
-    }else if(!githubFetch.ok){
-      throw new Error("Response is not OK")
-    }
-    const fetchData = await githubFetch.json()
-    if(fetchData.length === 0){
-      throw new Error("Response was ok, but repo returned empty")
-    }
-    console.log(fetchData)
-     return fetchData
-  }catch(e){
-    console.error("Catch Error Handler: ", e)
-  }
-}
 
 
 // function fetchGitHubRepoData(){

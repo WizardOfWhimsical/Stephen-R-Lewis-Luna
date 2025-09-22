@@ -1,8 +1,41 @@
 @import url("./styles.css");
 
 section div{
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+section div ul{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section div ul li{
+  width: 100vw;
+  height: 3em;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-around;
+  align-items: center;
+}
+
+section div ul li h2{
+justify-self: flex-start;
+}
+
+section div ul li span{
+width:60vw;
+overflow: hidden;
+}
+
+a{
+  text-decoration: none;
+  font-size: 1.5em;
+  color: var(--lightPrimary)
 }

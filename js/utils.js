@@ -62,6 +62,25 @@ class RepoItemPutInDOM {
   }
 }
 
+async function fetchGitHubRepoData(){
+  try{
+    const githubFetch = await fetch("https://api.github.com/users/WizardOfWhimsical/repos")
+    if(githubFetch.status === 404) {
+    throw new Error("GitHub API: Resource not found (404)");
+    }else if(!githubFetch.ok){
+      throw new Error("Response is not OK")
+    }
+    const fetchData = await githubFetch.json()
+    if(fetchData.length === 0){
+      throw new Error("Response was ok, but repo returned empty")
+    }
+    console.log(fetchData)
+     return fetchData
+  }catch(e){
+    console.error("Catch Error Handler: ", e)
+  }
+}
+
 function clearList() {
   if (messageList.querySelectorAll("li").length > 0) {
   messageList.querySelectorAll("li").forEach((li) => {
