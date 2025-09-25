@@ -13,9 +13,7 @@ createElement() {
   createButton() {
     const removeButton = document.createElement("button");
     removeButton.setAttribute("type", "button");
-    removeButton.classList.add("button-uniform")
-    removeButton.classList.add("callToActionButton")
-    removeButton.classList.add("grabbingCursor");
+    removeButton.classList.add("button-uniform","callToActionButton","grabbingCursor")
     removeButton.textContent = "Remove";
     removeButton.addEventListener("click", function () {
       const entry = this.parentNode;
@@ -36,19 +34,8 @@ createElement() {
 class RepoItemPutInDOM {
   constructor(obj){
     this.name = obj.name;
-    this.url = `https://wizardofwhimsical.github.io/${obj.name}`;
-    this.description =  obj.description
+    this.url = `https://wizardofwhimsical.github.io/${this.name}`;
   }
-  createHeader(){
-    const header = document.createElement("h2")
-     header.innerText = this.name;
-     return header
-  };
-  createSpan(){
-    const span = document.createElement("span")
-    span.innerText = this.description;
-    return span
-  };
   createAnchor(){
     const anchorTag = document.createElement("a");
     anchorTag.innerText = `${this.name} Site`;
@@ -57,7 +44,7 @@ class RepoItemPutInDOM {
   };
   appendRepoListItem(parent){
     const container = document.createElement("li");
-    container.append(this.createHeader(), this.createSpan(), this.createAnchor());
+    container.append(this.createAnchor());
     parent.append(container) 
   }
 }

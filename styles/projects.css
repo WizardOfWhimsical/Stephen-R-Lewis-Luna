@@ -24,17 +24,7 @@ section div ul li{
   justify-content: space-around;
   align-items: center;
 }
-
-section div ul li h2{
-justify-self: flex-start;
-}
-
-section div ul li span{
-width:60vw;
-overflow: hidden;
-}
-
-a{
+section div ul li a{
   text-decoration: none;
   font-size: 1.5em;
   color: var(--lightPrimary)
