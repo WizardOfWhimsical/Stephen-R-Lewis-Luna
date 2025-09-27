@@ -1,4 +1,8 @@
-
+/**
+ * 
+ * I was informed i went about this orginzation all wrong. i will do better next time
+ * 
+ */
 class Message {
   constructor(userName, userEmail, userMessage) {
     this.userName = userName;
@@ -13,9 +17,7 @@ createElement() {
   createButton() {
     const removeButton = document.createElement("button");
     removeButton.setAttribute("type", "button");
-    removeButton.classList.add("button-uniform")
-    removeButton.classList.add("callToActionButton")
-    removeButton.classList.add("grabbingCursor");
+    removeButton.classList.add("button-uniform","callToActionButton","grabbingCursor")
     removeButton.textContent = "Remove";
     removeButton.addEventListener("click", function () {
       const entry = this.parentNode;
@@ -30,6 +32,43 @@ createElement() {
     messageElement.append(removeButton);
     console.log("Appending message element to parent:",{messageElement});
     parent.append(messageElement);
+  }
+}
+
+class RepoItemPutInDOM {
+  constructor(obj){
+    this.name = obj.name;
+    this.url = `https://wizardofwhimsical.github.io/${this.name}`;
+  }
+  createAnchor(){
+    const anchorTag = document.createElement("a");
+    anchorTag.innerText = `${this.name} Site`;
+    anchorTag.setAttribute("href", this.url);
+    return anchorTag
+  };
+  appendRepoListItem(parent){
+    const container = document.createElement("li");
+    container.append(this.createAnchor());
+    parent.append(container) 
+  }
+}
+
+async function fetchGitHubRepoData(){
+  try{
+    const githubFetch = await fetch("https://api.github.com/users/WizardOfWhimsical/repos")
+    if(githubFetch.status === 404) {
+    throw new Error("GitHub API: Resource not found (404)");
+    }else if(!githubFetch.ok){
+      throw new Error("Response is not OK")
+    }
+    const fetchData = await githubFetch.json()
+    if(fetchData.length === 0){
+      throw new Error("Response was ok, but repo returned empty")
+    }
+    console.log(fetchData)
+     return fetchData
+  }catch(e){
+    console.error("Catch Error Handler: ", e)
   }
 }
 
@@ -48,7 +87,6 @@ function futureFetchSimulation(arrayOfMessages) {
     listElement.rendered(messageList);
   })
 }
-
 
 function setAttributes(el, attr){
   for(let key in attr){
